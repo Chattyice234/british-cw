@@ -29,6 +29,8 @@
     .button {
       display: inline-block;
       margin-top: 10px;
+      margin-left: 2px;
+      margin-right: 2px;
       padding: 10px 20px;
       background-color: #000;
       color: #fff;
@@ -66,7 +68,7 @@
     }
     #movingText {
       position: absolute;
-      top: 190px;  /* Adjust according to your layout */
+      top: 50px;  /* Adjust according to your layout */
       left: -100%; /* Start off the screen on the left */
       font-size: 18px; /* Match the font size with the blocks message */
       font-weight: bold; /* Make it bold */
@@ -86,10 +88,7 @@
 </head>
 <body>
   <!-- Whoever you are, have a great day and fun time editing this file!  | New BL0CKS messages -->
-  <div id="blocksMessage">CTRL+G OR CTRL + F TO SEARCH FOR GAMES</div>
-  <div id="blocksMessage">ROBLOX ON NOW.GG DOESNT WORK AT SCHOOL</div>
-  <div id="blocksMessage">https://educational-solutions.ukintech.com/  AND https://jobs.saer-emploi.com/ FOR INTERSTELLAR</div>
-  <div id="blocksMessage">CREATOR OF BRITISH MAN WEBSITE, IF YOU ARE READING THIS, IF YOU WANT TO TALK ABOUT THE SITES OR OTHER THINGS CONTACT ME AT <a href="mailto:iamohio1@outlook.com">iamohio1@outlook.com</a> OTHER PEOPLE ALSO CAN CONTACT IF YOU WANT TO CHAT</div>
+  <div id="blocksMessage">ANYONE MAY CONTACT ME AT <a href="mailto:iamohio1@outlook.com">iamohio1@outlook.com</a></div>
 
  <!-- Moving Text -->
   <div id="movingText">HAVE A GREAT TIME!</div>
@@ -102,11 +101,11 @@
   <button id="launchBrowser" class="button">Browser</button>
   <button id="launchBrowsertwo" class="button">Browser List</button>
   <button id="launchUltraviolet" class="button">Ultraviolet</button>
-  <button id="lanschool" class="button">Search history byp@ss</button>
+  <button id="lanschool" class="hidden">Search history byp@ss</button>
+  <button id="chat" class="button">Online Chat</button>
   <button id="exploits" class="button">Tools/Exploits</button>
   <button id="downloads" class="button">Downloads</button>
-  <button id="downloads2" class="button">Downloads 2</button>
-  <button id="newestver" class="button">Newest BM Version</button>
+  <button id="newestver" class="hidden">Newest BM Version</button>
   <button id="openInAboutBlank" class="button">About:blank Cloak</button>
   <button id="changelog" class="hidden">Changelog</button>
   <button id="links" class="button">BCW Links</button>
@@ -154,10 +153,6 @@
         ":0",
         "ERROR - SRC=TROJAN_VIRUS.EXE_RUNFILE NOT FOUND",
         "it's super sigma, greg",
-        "it turns out i got carpal tunnel. great",
-        "new british man buttons are great",
-        "thanks british man website",
-        "wakin up 5 in the  morning on weekends to update this. fire times :D",
         "chromebooks suck",
         "forgot my pencil",
         "nahh im not blocking the games during the day",
@@ -310,6 +305,7 @@
       { name: "Skribbl.io", url: "https://skribbl.io" },
       { name: "Minecraft (1.5)", url: "https://eaglercraft.glitch.me/" },
       { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
+      { name: "Minecraft 1.8 (WASM, FPS BOOST)", url: "https://eaglercraft.com/mc/1.8.8-wasm/" },
       { name: "Resent Client Eagler (1.8)", url: "https://reslauncher4.vercel.app" },
       { name: "Eaglercraft (1.20)", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/964c4358-60a7-4121-908e-63f6ae6e5ef0" },
       { name: "Eaglercraft Versions & Clients", url: "https://html.cafe/x7922b580" },
@@ -426,6 +422,7 @@
       { name: "Win11 in React", url: "https://win11.blueedge.me" },
       { name: "Hypackel 2", url: "https://hypackel.com" },
       { name: "Hypackel 3", url: "https://hypackel.github.io" },
+      { name: "Hypackel 4", url: "https://hypackellite.vercel.app/settings.html" },
       { name: "1v1.lol Fortnite - Play at home", url: "https://1v1.lol" },
       { name: "Impossible Quiz 2", url: "https://archive.org/details/tiq2_swf" },
       { name: "Now.gg Method 2", url: "https://web.archive.org/web/20241112154118/now.gg" },
@@ -475,7 +472,7 @@
       { name: "Always Impostor", url: "https://html5.gamedistribution.com/9abe6af0fbb440b98a3e24bf7fb0636a/?gd_sdk_referrer_url=https://kevin.games/always-impostor" },
       { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/src/browser/" },
       { name: "2D kinda space shooting game", url: "https://html.cafe/x704e8436" },
-      { name: "WebMC", url: "https://webmc.xyz/" },
+      { name: "WebMC (Eaglercraft Launcher)", url: "https://webmc.xyz/" },
       { name: "Vex 3", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/85266bc0-927a-4c24-b7b2-4dd34a0c1c6a" },
       { name: "Vex 4", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/0f85cdc3-db02-4e24-8103-5190d86e63dc" },
       { name: "Vex 5", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ce8df8b-a3f3-4887-bb7a-0c0b1f312bfb" },
@@ -484,6 +481,12 @@
       { name: "Geometry dash ( Real )", url: "https://nowgg.lol/apps/robtop-games/1400/geometry-dash.html" },
       { name: "Stumble guys ( Server 1 )", url: "https://www.stumbleguys.com/play" },
       { name: "Stumble guys ( server 2 )", url: "https://nowgg.lol/apps/kitika-games/7999/stumble-guys.html" },
+      { name: "Cookie Clicker 2024 Method 2", url: "https://cookieclickerunblocked.github.io/games/cookie-clicker/index.html" },
+      { name: "Sandspiel Ripoff (Sandsaga)", url: "https://sandsaga.com" },
+      { name: "BitLife (Server 2)", url: "https://geometryspot.help/bitlife/1.html" },
+      { name: "GlacierOS", url: "https://pc.chro64.com/" },
+      { name: "Rocket Bot Royale", url: "https://rocketbotroyale2.winterpixel.io" },
+
     
 
       
@@ -548,7 +551,7 @@ document.getElementById("launchApps").onclick = function() {
             { name: "AI Images", url: "https://nuelink.com/tools/ai-image-generator" },
             { name: "Global Image URL Generator", url: "https://html.cafe/x2a36ad24"},
             { name: "ChatGPT Alt", url: "https://talkai.info/" },
-            { name: "YT to mp3", url: "https://ytmp3.nu" },
+            { name: "YT to mp3", url: "https://ezmp3.cc" },
             { name: "Screen Recorder", url: "https://html.cafe/xf7a71dd8" },
             { name: "Image URL Generator 2", url: "https://www.imghippo.com/" },
             { name: "JMW AI Chat", url: "https://infinitetutoring.com.au/history/src/AI" },
@@ -623,14 +626,11 @@ document.getElementById("launchUltraviolet").onclick = function() {
   document.body.innerHTML = '<object id="UltravioletFrame" type="text/html" data="https://dfs3rzq44v6as.cloudfront.net/#/prxy" style="width: 100%; height: 100vh;"></object>';
 };
 
-document.getElementById("downloads2").onclick = function() {
+document.getElementById("downloads").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/xfafb7281" style="width: 100%; height: 100vh;"></object>';
 };
 document.getElementById("exploits").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x00c791ce" style="width: 100%; height: 100vh;"></object>';
-};
-document.getElementById("downloads").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x9e0766cc" style="width: 100%; height: 100vh;"></object>';
 };
 document.getElementById("newestver").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="" style="width: 100%; height: 100vh;"></object>';
@@ -643,6 +643,10 @@ document.getElementById("changelog").onclick = function() {
 };
 document.getElementById("makeapr0xy").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x7836dbf6" style="width: 100%; height: 100vh;"></object>';
+};
+
+document.getElementById("chat").onclick = function() {
+  document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/x1b3f9111" style="width: 100%; height: 100vh;"></object>';
 };
 
   </script>
