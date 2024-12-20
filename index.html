@@ -126,14 +126,13 @@
 
     <!-- <img src="https://i.imgur.com/v3zKsaK.png"> chattydev -->
     <h1>BRITISH CW REPLACED CW >:D</h1>
-    <h3>Update Log: The CW background and buttons are back :D New games, apps, buttons</h3>
+    <h3>Update Log: The CW background and buttons are back :D New games, apps, buttons, search history byp@ss moved to tools/exploits</h3>
     <button id="launchGames" class="button">Games</button>
     <button id="launchApps" class="button">Apps</button>
-    <button id="makeapr0xy" class="button">Make a pr0xy link</button>
-    <button id="launchBrowser" class="button">Browser</button>
-    <button id="launchBrowsertwo" class="button">Browser List</button>
+    <button id="makeapr0xy" class="button">Create a Pr0xy</button>
+    <button id="launchBrowser" class="button">Browsers</button>
     <button id="launchUltraviolet" class="button">Ultraviolet</button>
-    <button id="lanschool" class="button">Search history byp@ss</button>
+    <button id="lanschool" class="hidden">Search history byp@ss</button> <!--Search history bypass has been moved to tools/exploits-->
     <button id="chat" class="button">Online Chat</button>
     <button id="exploits" class="button">Tools/Exploits</button>
     <button id="downloads" class="button">Downloads</button>
@@ -206,7 +205,6 @@
         "spiders are freaky",
         "favian is freaky",
         "cascadia font is the goat",
-        "welcome to the internet, put your cares aside. here's a tip for straining pasta, here's a nine year old who died",
         "i wonder what people do on their 69th birthday",
         "fun fact: skribbl.io was the first game I ever played on my school chromebook, back then securly didn't block it and goguardian wasn't installed yet in our district. that's also how I got dirty minded!",
         "chromebook screens are smallllllllllll",
@@ -219,6 +217,7 @@
         "my former bug report form's first response: What is the bug? - wussup lil spoon can you fix friday night funkin please vro or imma jump yo all diddy",
         "ctrl + ] to move this line to the right",
         "C H A I R",
+        "the occasional Test button you see is a test to test websites that may work, testing the test. Test",
         "did you know that ctrl + w on this tab gives you a secret unblocked windows OS downloadable as an HTML file for you to have an unblocked browser, desktop games, and vscode?",
         "fun fact: I was scrolling on html.cafe/gallery/ because I found some great sites, like a proxy and other gamess. Then I found this icon that said Download latest version, so I clicked on it and the download button, and when I opened the file, it was British man website! I then found it had working Roblox and ripped off the site and made it chatty",
         "showers at science camp were freaky we had people jerking, freaky, and talking bout their meatsticks having icicles below them. i had no normal people in my cabin after wednesday D:",
@@ -385,6 +384,7 @@
       { name: "Roblox (Now.gg 3)", url: "https://nowgg.lol/" },
       { name: "Roblox (Now.gg 4)", url: "https://pathetic-roblox-main.vercel.app/" },
       { name: "Roblox (Now.gg 5)", url: "https://html.cafe/x8bcb5934" },
+      { name: "Roblox (Now.gg 6)", url: "https://s2g3.onrender.com" },
       { name: "Tortilla Games", url: "https://dfs3rzq44v6as.cloudfront.net"},
       { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
       { name: "Five Nights At Winston's", url: "https://g.deev.is/fnaw" },
@@ -556,7 +556,11 @@
       { name: "BitLife (Server 2)", url: "https://geometryspot.help/bitlife/1.html" },
       { name: "GlacierOS", url: "https://learn.englishrealm.ca/" },
       { name: "Rocket Bot Royale", url: "https://rocketbotroyale2.winterpixel.io" },
-
+      { name: "Retro Bowl", url: "https://ethonion10.neocities.org/" },
+      { name: "Windows 10 Emulator", url: "https://dustinbrett.com/" },
+      { name: "AaronOS", url: "https://aaronos.dev/" },
+      { name: "Windows 96", url: "https://windows96.net/" },
+      { name: "Tinfoil Proxy & Games (About:blank cloak)", url: "https://assignment.jmwubg.com.au/" },
     
 
       
@@ -622,6 +626,7 @@ document.getElementById("launchApps").onclick = function() {
             { name: "Global Image URL Generator", url: "https://html.cafe/x2a36ad24"},
             { name: "ChatGPT Alt", url: "https://talkai.info/" },
             { name: "YT to mp3", url: "https://ezmp3.cc" },
+            { name: "HTML Editor and Downloader", url: "https://html.cafe/x978c906e" },
             { name: "Screen Recorder", url: "https://html.cafe/xf7a71dd8" },
             { name: "Image URL Generator 2", url: "https://www.imghippo.com/" },
             { name: "JMW AI Chat", url: "https://infinitetutoring.com.au/history/src/AI" },
@@ -682,14 +687,10 @@ document.getElementById("launchApps").onclick = function() {
   };
 
 document.getElementById("launchBrowser").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x2dcf2854" style="width: 100%; height: 100vh;"></object>';
+  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x6c8433a0" style="width: 100%; height: 100vh;"></object>';
 };
 document.getElementById("lanschool").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x88b1c570" style="width: 100%; height: 100vh;"></object>';
-};
-
-document.getElementById("launchBrowsertwo").onclick = function() {
-  document.body.innerHTML = '<object id="BrowsertwoFrame" type="text/html" data="https://html.cafe/xcd10bad0" style="width: 100%; height: 100vh;"></object>';
 };
 
 document.getElementById("launchUltraviolet").onclick = function() {
@@ -697,10 +698,10 @@ document.getElementById("launchUltraviolet").onclick = function() {
 };
 
 document.getElementById("downloads").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/xfafb7281" style="width: 100%; height: 100vh;"></object>';
+  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/xa841843c" style="width: 100%; height: 100vh;"></object>';
 };
 document.getElementById("exploits").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x00c791ce" style="width: 100%; height: 100vh;"></object>';
+  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x7c581b64" style="width: 100%; height: 100vh;"></object>';
 };
 document.getElementById("newestver").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="" style="width: 100%; height: 100vh;"></object>';
@@ -720,9 +721,5 @@ document.getElementById("chat").onclick = function() {
 };
 
     </script>
-</body>
-
-</html>
-</body>
-
+  </body>
 </html>
