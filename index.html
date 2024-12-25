@@ -8,10 +8,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clever | Portal</title>
-    <!-- <link> and <title> tags to disguise page as the Clever Portal when you go on a different tab (works every time when teachers walk by your screen)-->
+    <!-- <link> and <title> tags to disguise page as the Clever Portal when you go on a different tab to hide-->
     <link rel="icon" type="image/png"
         href="https://resources.finalsite.net/images/f_auto,q_auto/v1689877141/mooreschoolscom/emadd6nvplrnh1vsswjf/Clever-Logo.jpg">
-    <style>
+    <style> /* Otherwise the site looks like a skeleton */
         body {
             margin: 0;
             padding: 0;
@@ -37,6 +37,60 @@
         }
 
         .button {
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 25px;
+            /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-bl {
+            top:0%; /* Position the button to the top left | Credits to Stack Overflow users on this thread https://stackoverflow.com/questions/63541670/how-to-position-a-button-on-website-using-html-css*/
+            left:0%;
+            width:200px;
+            height:40px;
+            position: absolute;
+            z-index: 2; 
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 25px;
+            /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-links {
+            top:0%; /* Position the button to the top right */
+            right:0%;
+            width:200px;
+            height:40px;
+            position: absolute;
+            z-index: 2; 
             display: inline-block;
             margin-top: 10px;
             margin-left: 2px;
@@ -140,23 +194,18 @@
 
     <!-- <img src="https://i.imgur.com/v3zKsaK.png"> chattydev -->
     <h1>{ 🌆 🎄ChattyWebsite🎄 🌆 }</h1>
-    <h4>Update Log: The CW background and buttons are back :D New games, apps, buttons, search history byp@ss moved to tools/exploits | Calling the site ChattyWebsite alone again! | New style updates from BW</h4>
+    <h4 style="color:blue; background-color:black">Update Log: New games, apps, buttons, search history byp@ss moved to tools/exploits | Calling the site ChattyWebsite alone again! | New style updates from BW | Extension deleter is working again | Learned to spell (in the code at least) | New button positions!</h4>
     <h4>🎄 Merry Christmas! 🎄</h4>
     <button id="launchGames" class="button">Games</button>
     <button id="launchApps" class="button">Apps</button>
-    <button id="makeapr0xy" class="button">Create a Pr0xy</button>
     <button id="launchBrowser" class="button">Browsers</button>
     <button id="launchUltraviolet" class="button">Ultraviolet</button>
     <button id="lanschool" class="hidden">Search history byp@ss</button> <!--Search history bypass has been moved to tools/exploits-->
-    <button id="chat" class="button">Online Chat</button>
-    <button id="ai" class="button">AI Chat</button>
-    <button id="hanger" class="button">Extension Killer</button>
     <button id="exploits" class="button">Tools/Exploits</button>
     <button id="downloads" class="button">Downloads</button>
-    <button id="newestver" class="hidden">Newest BM Version</button>
-    <button id="openInAboutBlank" class="button">About:blank Cloak</button>
+    <button id="openInAboutBlank" class="button-bl">About:blank Cloak</button>
     <button id="changelog" class="hidden">Changelog</button>
-    <button id="links" class="button">BCW Links</button>
+    <button id="links" class="button-links">BCW Links</button>
     <!-- if any of the button classes are "hidden", they are likely useless or broken -->
     <div id="randomPhrase"></div>
     <div id="instructions" class="hidden">
@@ -195,7 +244,8 @@
         "(ﾉಥ益ಥ）ﾉ ┻━┻",
         "ლ(ಠ益ಠ)ლ",
         ":D",
-        "( ͡° ͜ʖ ͡° )",
+        "( ͡° ͜ʖ ͡° )", 
+        // aka instances of your mom
         "☉_☉",
         "・_・",
         "ヽ༼ ಠ益ಠ ༽ﾉ",
@@ -203,6 +253,7 @@
         "-_-",
         ":0",
         "ERROR - SRC=TROJAN_VIRUS.EXE_RUNFILE NOT FOUND",
+        "roblox mobile is C R I N G E",
         "it's super sigma, greg",
         "chromebooks suck",
         "forgot my pencil",
@@ -235,6 +286,7 @@
         "my former bug report form's first response: What is the bug? - wussup lil spoon can you fix friday night funkin please vro or imma jump yo all diddy",
         "ctrl + ] to move this line to the right",
         "C H A I R",
+        "pink guy - furr",
         "the occasional Test button you see is a test to test websites that may work, testing the test. Test",
         "did you know that ctrl + w on this tab gives you a secret unblocked windows OS downloadable as an HTML file for you to have an unblocked browser, desktop games, and vscode?",
         "fun fact: I was scrolling on html.cafe/gallery/ because I found some great sites, like a proxy and other gamess. Then I found this icon that said Download latest version, so I clicked on it and the download button, and when I opened the file, it was British man website! I then found it had working Roblox and ripped off the site and made it chatty",
@@ -270,7 +322,7 @@
         "noescape.exe has been successfully installed. would you like to open it?",
         "12/18/2024 8:58 pm",
         "Look it's september 11",
-        "brian going thinking barney stole chatty, what the hell? now i've gotta be the one to tell. other people doing this does not ring a bell, where you fell, of course, your brain lost a few cells, not the best accusation, and starting this conversation",
+        "look it's a chrome://kill!",
         "/give perms BarneyWebsite",
         "BCW Links",
         "the cw theme is back :D",
@@ -400,6 +452,8 @@
       { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
       { name: "Minecraft 1.8 (WASM, FPS BOOST)", url: "https://eaglercraft.com/mc/1.8.8-wasm/" },
       { name: "Minecraft (1.9)", url: "https://html.cafe/x56360a59" },
+      { name: "Minecraft (1.9 Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/1-9.html" },
+      { name: "Minecraft (1.11)", url: "https://d272xss3wq00xu.cloudfront.net/1-11.html" },
       { name: "Resent Client Eagler (1.8)", url: "https://reslauncher4.vercel.app" },
       { name: "Starlike Client Eagler (1.16- kinda)", url: "https://starlike.zumbiepig.dev/" },
       { name: "Eaglercraft (1.20)", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/964c4358-60a7-4121-908e-63f6ae6e5ef0" },
@@ -414,6 +468,8 @@
       { name: "Tortilla Games", url: "https://dfs3rzq44v6as.cloudfront.net"},
       { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
       { name: "Five Nights At Winston's", url: "https://g.deev.is/fnaw" },
+      { name: "1 (Reversed 2048)", url: "https://d272xss3wq00xu.cloudfront.net/2048/index.html" },
+      { name: "Bottle Flip 3D", url: "https://d272xss3wq00xu.cloudfront.net/bottle-flip-3d/index.html" },
       { name: "Neal.fun", url: "https://neal.fun" },
       { name: "Subway Surfers", url: "https://dddavit.github.io/subway/" },
       { name: "Slope", url: "https://mathadventure1.github.io/slope/slope/index.html" },
@@ -421,6 +477,7 @@
       { name: "Slope 3", url: "https://slope3.com/" },
       { name: "Cookie Clicker", url: "https://eli-schwartz.github.io/cookieclicker/" },
       { name: "Drive Mad", url: "https://ubg365.github.io/drive-mad/play.html" },
+      { name: "Drive Mad (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/drivemad/index.html" },
       { name: "Drive Mad Mod", url: "https://play.fancade.com/63BA239C20C40BF3" }, 
       { name: "BitLife", url: "https://ubg365.github.io/bitlife-life-simulator/play.html" },
       { name: "Ztype", url: "https://zty.pe" },
@@ -457,16 +514,20 @@
       { name: "Mr. Bullet", url:"https://www.yurk.com/games/mrbullet/" },
       { name: "Sandspiel", url: "https://sandspiel.club" },
       { name: "Slow Roads", url: "https://slowroads.io" },
+      { name: "Slow Roads (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/slow-roads/index.html" },
       { name: "Edys Car Simulator", url: "https://unblocked-games.s3.amazonaws.com/edys-car-simulator.html" },
       { name: "Backrooms", url: "https://adfree3kh0.github.io/projects/backrooms/index.html" },
       { name: "Impossible Quiz", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Impossible%20Quiz" },
+      { name: "Impossible Quiz (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/impossiblequiz/index.html" },
       { name: "Among Us Singleplayer", url: "https://adfree3kh0.github.io/projects/among-us/index.html" }, 
       { name: "Windows XP Emulator", url: "https://winxp.vercel.app/" },
       { name: "Eggy Car", url: "https://www.yurk.com/games/eggycar/" },
+      { name: "Eggy Car (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/eggy-car/index.html" },
       { name: "Turbowarp Packager (Download Scratch Projects)", url: "https://packager.turbowarp.org" },
       { name: "Bad Piggies", url: "https://www.friv.cm/bad-piggies/fullscreen/" },
       { name: "Cluster Rush",  url: "https://duckmath.org/g4m3s/cluster-rush.html" },
       { name: "Crossy Road", url: "https://selenite.cc/semag/crossyroad/index.html" },
+      { name: "Crossy Road (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/crossyroad/index.html" },
       { name: "1v1.lol", url: "https://selenite.cc/semag/1v1lol/index.html" },
       { name: "Bloxd.io", url: "https://bloxd.io" },
       { name: "CubeRealm.io", url: "https://cuberealm.io/" },
@@ -483,6 +544,7 @@
       { name: "FNAF 2", url: "https://selenite.cc/semag/fnaf2/index.html" },
       { name: "FNAF 3", url: "https://selenite.cc/semag/fnaf3/index.html" },
       { name: "FNAF 4", url: "https://selenite.cc/semag/fnaf4/index.html" },
+      { name: "FNAF 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/FNAF4/index.html" },
       { name: "Selenite Minecraft", url: "https://selenite.cc/semag/eaglercraft/index.html" },
       { name: "MEGA Client", url: "https://megaclient.vercel.app" },
       { name: "LittleBigSnake", url: "https://littlebigsnake.com" },
@@ -558,21 +620,25 @@
       { name: "Eaglercraft Clients", url: "https://eaglercraftx1-8.github.io/" },
       { name: "Slither.io", url: "http://slither.com/io" },
       { name: "Easyfun.gg", url: "https://easyfun.gg" },
+      { name: "Ballistic", url: "https://d272xss3wq00xu.cloudfront.net/ballistic/index.html" },
       { name: "Minecraft Java Edition", url: "https://mcraft.fun" },
       { name: "Mood Tracker", url: "https://html.cafe/xb2c91b5a" },
       { name: "Guess The Number Game", url: "https://html.cafe/x63aefeaa" },
       { name: "HTML Editor", url: "https://spacenerd24.github.io/Online-HTML-Viewer/" },
       { name: "Selenite Method 2", url: "https://selenite-copy.pages.dev" },
-      { name: "Android App Launcher", url: "https://nowgg.lol/apps/uncube/7074/now.html" },
+      { name: "Android App Launcher", url: "https://nowgg.lol/apps/frogiee1/69420/custom-thingy-loader.html" },
       { name: "Astroid.gg Games + Apps + Proxy", url: "https://astroid.gg/" },
       { name: "Always Impostor", url: "https://html5.gamedistribution.com/9abe6af0fbb440b98a3e24bf7fb0636a/?gd_sdk_referrer_url=https://kevin.games/always-impostor" },
       { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/src/browser/" },
       { name: "2D kinda space shooting game", url: "https://html.cafe/x704e8436" },
       { name: "WebMC (Eaglercraft Launcher)", url: "https://webmc.xyz/" },
       { name: "Vex 3", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/85266bc0-927a-4c24-b7b2-4dd34a0c1c6a" },
+      { name: "Vex 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex3/index.html" },
       { name: "Vex 4", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/0f85cdc3-db02-4e24-8103-5190d86e63dc" },
+      { name: "Vex 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex4/index.html" },
       { name: "Vex 5", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ce8df8b-a3f3-4887-bb7a-0c0b1f312bfb" },
       { name: "Vex 6", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ec8754e-65c7-45bf-90f3-b342c4e33cc4" },
+      { name: "Vex 6 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex6/index.html" },
       { name: "Vex 7", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/a7abe0b4-e894-4799-89e8-b9806e7e33f6" },
       { name: "Geometry dash ( Real )", url: "https://nowgg.lol/apps/robtop-games/1400/geometry-dash.html" },
       { name: "Stumble guys ( Server 1 )", url: "https://www.stumbleguys.com/play" },
@@ -580,6 +646,8 @@
       { name: "Cookie Clicker 2024 Method 2", url: "https://cookieclickerunblocked.github.io/games/cookie-clicker/index.html" },
       { name: "Sandspiel Ripoff (Sandsaga)", url: "https://sandsaga.com" },
       { name: "BitLife (Server 2)", url: "https://geometryspot.help/bitlife/1.html" },
+      { name: "Bitlife (Server 3)", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },
+      { name: "Scrap Metal 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/scrapmetal/index.html" },
       { name: "GlacierOS", url: "https://learn.englishrealm.ca/" },
       { name: "Rocket Bot Royale", url: "https://rocketbotroyale2.winterpixel.io" },
       { name: "Retro Bowl", url: "https://ethonion10.neocities.org/" },
@@ -660,6 +728,7 @@ document.getElementById("launchApps").onclick = function() {
             { name: "JMW AI Chat", url: "https://infinitetutoring.com.au/history/src/AI" },
             { name: "Notepad in JS", url: "https://notepad.js.org/index.html" },
             { name: "Proxy Link Creator", url: "https://censordodge.com" },
+            { name: "Make a proxy link with Koyeb", url: "https://html.cafe/x7836dbf6" },
             { name: "Bypass Ad Links", url: "https://bypass.city" },
             { name: "YT to MP3", url: "https://cobalt.tools" },
             { name: "Download Message Encoder/Decoder", url: "https://static.onecompiler.com/images/questions/42z3pt83t/MessageEncoderDecoder.html" },
@@ -717,9 +786,6 @@ document.getElementById("launchApps").onclick = function() {
 document.getElementById("launchBrowser").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x6c8433a0" style="width: 100%; height: 100vh;"></object>';
 };
-document.getElementById("lanschool").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x88b1c570" style="width: 100%; height: 100vh;"></object>';
-};
 
 document.getElementById("launchUltraviolet").onclick = function() {
   document.body.innerHTML = '<object id="UltravioletFrame" type="text/html" data="https://dfs3rzq44v6as.cloudfront.net/#/prxy" style="width: 100%; height: 100vh;"></object>';
@@ -731,27 +797,25 @@ document.getElementById("downloads").onclick = function() {
 document.getElementById("exploits").onclick = function() {
   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x7c581b64" style="width: 100%; height: 100vh;"></object>';
 };
-document.getElementById("newestver").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="" style="width: 100%; height: 100vh;"></object>';
-};
-document.getElementById("changelog").onclick = function() {
-  document.body.innerHTML = '<object id="changelogFrame" type="text/html" data="https://html.cafe/x0ccfcfe7" style="width: 100%; height: 100vh;"></object>';
-};
     document.getElementById("links").onclick = function() {
   document.body.innerHTML = '<object id="linksFrame" type="text/html" data="https://html.cafe/x1a39d9e5" style="width: 100%; height: 100vh;"></object>';
 };
-document.getElementById("makeapr0xy").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x7836dbf6" style="width: 100%; height: 100vh;"></object>';
-};
-document.getElementById("hanger").onclick = function() {
-  document.body.innerHTML = '<object id="hangerFrame" type="text/html" data="https://html.cafe/xfcef538d" style="width: 100%; height: 100vh;"></object>';
-};
-document.getElementById("ai").onclick = function() {
-  document.body.innerHTML = '<object id="aiFrame" type="text/html" data="https://html.cafe/x2029431d" style="width: 100%; height: 100vh;"></object>';
-};
-document.getElementById("chat").onclick = function() {
-  document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/x1b3f9111" style="width: 100%; height: 100vh;"></object>';
-};
+// Button scripts no longer in use
+// document.getElementById("ai").onclick = function() {
+//   document.body.innerHTML = '<object id="aiFrame" type="text/html" data="https://html.cafe/x2029431d" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("chat").onclick = function() {
+//   document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/x1b3f9111" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("lanschool").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x88b1c570" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("newestver").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("changelog").onclick = function() {
+//   document.body.innerHTML = '<object id="changelogFrame" type="text/html" data="https://html.cafe/x0ccfcfe7" style="width: 100%; height: 100vh;"></object>';
+// };
 
     </script>
   </body>
