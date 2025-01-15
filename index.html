@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--if you think this is "hacking" fuck you-->
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,10 +7,20 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clever | Portal</title>
+    <title>New Tab</title>
     <link rel="icon" type="image/png"
-        href="https://resources.finalsite.net/images/f_auto,q_auto/v1689877141/mooreschoolscom/emadd6nvplrnh1vsswjf/Clever-Logo.jpg">
+        href="https://static-00.iconduck.com/assets.00/chrome-chromeos-logo-icon-256x256-vrc531on.png"> <!--Chrome://newtab favicon-->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        /* smooth hover animation for all scripts (selector:hover {})
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                0 0 30px rgba(255, 255, 255, 0.8); */
+        
         body {
             margin: 0;
             padding: 0;
@@ -26,18 +36,118 @@
             /* background : radial-gradient(#ADD8E6,rgb(52, 22, 202),rgb(8, 35, 85)); */ 
         }
 
+        body:hover {
+            cursor: default;
+        }
+
         h1 {
             margin-top: 180px;
             font-size: 24px;
             font-weight: 700;
-            background-color: rgb(14, 55, 168);
-            border: 3px solid #4467C4;
+            /* background-color: rgb(14, 55, 168); */
+            background: linear-gradient(#007FFF, #324AB2, #224C98);
+            border: 2px solid #4467C4;
             box-shadow: 0 0 0 2px #00316E, 0 0 0 4px #2234A8, 0 0 0 6px #00008C;
-            border-radius: 10000px;
+            border-radius: 0px;
             padding: 5px 10.125px;
             color:rgb(61, 136, 255);
             background : linear-gradient(#0080FE,rgb(22, 44, 205),rgb(19, 35, 211));
-            font-family: Raleway;
+            font-family: Varela Round;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        }
+
+        h4 {
+            font-family: 'Varela Round';
+        }
+
+        h4:hover {
+            cursor: default;
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h3 {
+            font-family: 'Varela Round';
+        }
+
+        h3:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h2 {
+            font-family: 'Varela Round';
+            background: linear-gradient(#00FFFFFF,rgb(41, 177, 189),rgb(46, 91, 213));
+            box-shadow: 0 0 0 2px #00316E, 0 0 0 4px #2234A8, 0 0 0 6px #00008C;
+            border: 2px solid #4467C4;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        }
+
+        h2:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h1:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        @keyframes glow {
+        0% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        50% {
+            text-shadow: 0 0 5px #f5f5f5;
+        }
+        100% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        }
+
+        @-webkit-keyframes glow {
+        0% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        50% {
+            text-shadow: 0 0 5px #f5f5f5;
+        }
+        100% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        }
+    
+        .btn-1 {
+            width: 175px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 5px 15px;
+            border: none;
+            color: white;
+            background-color: rgb(255, 0, 68);
+            border-radius: 4px;
+            box-shadow: inset 0 0 0 0 #f9e506;
+            transition: ease-out 0.3s;
+            font-size: 2rem;
+            outline: none;
+        }
+
+        .btn-1:hover {
+            box-shadow: inset 300px 0 0 0 #f9e506;
+            cursor: pointer;
+            color: #000;
         }
 
         .button {
@@ -74,8 +184,7 @@
             background-color: #00008B;
             color: #00FFFF;
             border: 2px solid #00ff;
-            border-radius: 12px;
-            /* Create rounded edges */
+            border-radius: 12px; /* Create rounded edges */
             font-weight: 700;
             font-family: Raleway;
             /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
@@ -101,8 +210,7 @@
             background-color: #00008B;
             color: #00FFFF;
             border: 2px solid #00ff;
-            border-radius: 12px;
-            /* Create rounded edges */
+            border-radius: 12px; /* Create rounded edges */
             font-weight: 700;
             font-family: Raleway;
             /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
@@ -111,6 +219,41 @@
             /* Smooth transition for the glow effect */
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
             /* Initial shadow effect */
+        }
+
+        .button-roblox-ts { /* TS means troubleshoot */
+            bottom: 0%; 
+            right: 0%;
+            width: 250px;
+            height: 40px;
+            position: absolute;
+            z-index: 2; 
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 12px; /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-roblox-ts:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
         }
 
         .button:hover {
@@ -141,6 +284,7 @@
         }
 
         #randomPhrase {
+            font-family: 'Varela Round';
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -151,10 +295,20 @@
             border-radius: 6.5px;
             padding: 5px 10.0125px;
             color:rgb(32, 91, 241);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 1),
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+        }
+
+        #randomPhrase:hover {
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
                 /* Glow effect */
-                0 0 30px rgb(48, 53, 79);
+                0 0 30px rgba(255, 255, 255, 0.8);
             /* More intense glow effect */
+            
         }
 
         .hidden {
@@ -170,6 +324,12 @@
             margin-top: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+
+        #blocksMessage:Hover {
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
         }
 
         #movingText {
@@ -190,7 +350,7 @@
             /* Animation settings */
         }
 
-        @keyframes moveAcross {
+        @keyframes moveAcross { /* Animate moving text from left to right */
             0% {
                 left: -100%;
                 /* Starting position off the left */
@@ -212,20 +372,21 @@
     <div id="movingText">HAVE A GREAT TIME!</div>
 
     <!-- <img src="https://i.imgur.com/v3zKsaK.png"> chattydev -->
-    <h1>{ 🌆 ChattyWebsite 🌆 } </h1>
-    <h4 style="color:blue; background-color:black">Update Log: New games, apps, and theme!</h4>
-    <!-- <button id="tabCloak" class="button">Tab cloak</button> -->
+    <h1>~*{ 🌆 ChattyWebsite 🌆 }*~</h1>
+    <h4 style="color:blue; background-color:black">Update Log: New games, apps, chatroom button, Proxies button, updated exthang3r, a TON of header hover animations, and theme!</h4>
     <button id="launchGames" class="button">Games</button>
     <button id="launchApps" class="button">Apps</button>
-    <button id="launchBrowser" class="button">Browsers</button>
+    <button id="chat" class="button">Chatroom</button>
+    <button id="LaunchProxy" class="button">Proxies</button>
     <button id="launchUltraviolet" class="hidden">Ultraviolet</button>
     <button id="lanschool" class="hidden">Search history byp@ss</button> <!--Search history bypass has been moved to tools/exploits-->
     <button id="exploits" class="button">Tools/Exploits</button>
     <button id="downloads" class="button">Downloads</button>
     <button id="openInAboutBlank" class="button-bl">About:blank Cloak</button>
     <button id="changelog" class="hidden">Changelog</button>
+    <button id="roblox-ts" class="button-roblox-ts">Why is Roblox not working?</button>
     <h2>ChattyWebsite Announcements</h2>
-    <h4>For the windows 11 in browser, the password and username for Apache Guacamole is guacadmin and guacadmin. Same username and pass. Check out Barney's Website! https://html.cafe/x715d6947 | Game/app/feature/bug report form is at the bottom of the "Games" page, scroll down fully to find it | Hope you guys all had a good winter break!</h4>
+    <h4>For the windows 11 in browser, the password and username for Apache Guacamole is guacadmin and the password is the same, guacadmin. Check out Barney's Website! https://html.cafe/x715d6947</h4>
     <button id="links" class="button-links">BCW Links</button>
     <!-- if any of the button classes are "hidden", they are likely useless or broken -->
     <div id="randomPhrase"></div>
@@ -253,9 +414,9 @@
     htmlSection.classList.toggle("hidden");
   });
     </script>
-    <script>
+    <script>       
         document.addEventListener("DOMContentLoaded", function() {
-      var phrases = [ // talk tuah starts now
+      var phrases = [
         "Chatty changed these lol",
         "helo",
         "whats up man",
@@ -266,13 +427,14 @@
         "kyse is stealing my aura with sigmafart >:( https://html.cafe/x4922b615",
         "Everyone's a rizzed up crank",
         "If you get this message, you are fat",
+        "If you get this message, you're black",
         "bye schoolwide talking",
         "bye chattywebsite",
         "HELIOS BROWSER IS FIREEEEEEE 🔥",
         "W UPDATES TO HELIOS DINGUSCHAN!",
         "dinguschan you dropped this → 👑",
         "sponsored by ducks",
-        "this school keeps throwing me absolute BS",
+        "nahhh barney, I stole like 10 splashes from you and you stole all of mine (stay mad >:D)",
         "2020 was 5 years ago",
         "i havent showered since last year",
         "boys bathroom is worse than you (the floors are sticky as hell)",
@@ -285,6 +447,7 @@
         "British ChattyWebsite >>>>>>>>>>> ChattyWebsite",
         "goodbyee",
         "This got blocked",
+        "barney, you'll see this at one point, but: in the online chatroom, the Anonymous guy dissing you, I know it was you, barney. i am 100% sure",
         "what",                                                                     
         "Sponsored by me lol",
         "sponsored by youtube",
@@ -297,10 +460,8 @@
         "bomb instructions - Google Search",
         "ChattyWebsite. More like FattyWebsite",
         "my mom said if i keep going on my computer she will bang my head into my keyboardsoujfh nyieukdhsgj9uovifujd08goiurej fduogiurejf9d8ogu",
-        "no more diddy parties >:(",
-        "welcome to the diddy part- STFU",
-        "Tab cloak me!",
         "hlrugvuj8idfhu gjdfchudhfjifds",
+        "Look guys its a ifvje fdughv jeoisprdxokf",
         "My name is skibidi toilet",
         "NoGuardian!",
         "bricked up bricks, bricked up bricks",
@@ -317,9 +478,10 @@
         "evidentp: new screensaver unlocked! im just kidding me: ooh goodie lemme use it for chattywebsite",
         "friday night codin",
         "Drive me to the skibidi club!",
+        "🥶🥵👌",
         "here in parkour civilization, no one chooses to jump for the beef. it's better to be safe wit- OH YOU DID IT follow me *falls*",
         "ytbers: I SURVIVED 24 HOURS IN ROBLOX... pls donate bots: amateurs",
-        "this gif is so unperfectly looped",
+        "now the gif is looped",
         "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "school uses blocker *ineffective*",
         "Ur computer has virus",
@@ -342,6 +504,9 @@
         "roblox mobile is C R I N G E",
         "imagine playing roblox on an ipad",
         "imagine playing roblox on a chromebook",
+        "me and barney were talking freaky in the chatroom >:D",
+        "Todays mission: backshot @StarsAreTumbling on Roblox.",
+        "i have a devious ahh plan for StarsAreTumbling",
         "imagine having the low taper fade",
         "the still water meme is still massive. you know what else is massive?",
         "you know what else is big?",
@@ -384,6 +549,9 @@
         "spiders are freaky",
         "favian is freaky",
         "cascadia font is the goat",
+        "Critical Error",
+        "Critical Error 2",
+        "gay",
         "i wonder what people do on their 69th birthday",
         "fun fact: skribbl.io was the first game I ever played on my school chromebook, back then securly didn't block it and goguardian wasn't installed yet in our district. that's also how I got dirty minded!",
         "chromebook screens are smallllllllllll",
@@ -410,8 +578,14 @@
         "Hrm, let me think about that.",
         "There are 2 r's in strawberry",
         "chatgpt is dumb bro wdym theres only 2 r's in strawberry",
+        "give me the exact coordinates of your bed",
+        "does your room have a lock",
+        "diddy will be under your bed tonight",
+        "shfgd iuxjg",
         "getliner.com is fire",
         "whoops i got html.cafe blocked :/",
+        "o/;[lm9kipmknhu,lmkjnhiuyos ,zxpocfldwsda()Sojdois]dsfsdf",
+        "you again?",
         "barneywebsite... come back",
         "https://youtube.com/channel/UCnHIZIrhEPBfQJNuQ79O3oA check out the creator of barneywebsite",
         "github.dev is vscode.dev",
@@ -539,7 +713,7 @@
         "roblox.uno",
         "getliner.com doesnt work D:",
         "roblox please work please work please work please work please work please work please work please work ",
-        "its 12:00 rn. man im hungry i dont want to wait 15 mins for lunch",
+        "Imagine opening a cabinet and an AI generated spider jumpscare comes out",
         "but Ms. Birch i never said i wanted to present ne- SHUT UP",
         "freakbob is calling",
         "this is anti freakbob",
@@ -550,6 +724,7 @@
         "No i'm not adding freaky stuff to this site stay mad",
         // No i'm not adding freaky stuff to this site stay mad
         // No i'm not adding freaky stuff to this site stay mad
+        "nvm the site got freaky anyways",
         "Me after seeing the 10th goofy ahh ripoff this week",
         "Pissing off your principal since 2023",
         "Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. ",
@@ -570,248 +745,251 @@
       document.body.innerHTML = "";
       setTimeout(function() {
         var games = [
-      { name: "Skribbl.io", url: "https://skribbl.io" },
-      { name: "Android App Launcher", url: "https://nowgg.lol/apps/frogiee1/69420/custom-thingy-loader.html" },
-      { name: "Minecraft (1.5)", url: "https://eaglercraft.glitch.me/" },
-      { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
-      { name: "Eaglercraft Server List", url: "https://servers.eaglercraft.com/" },
-      { name: "Minecraft 1.8 (Web Assembly, FPS Boost)", url: "https://eaglercraft.com/mc/1.8.8-wasm/" },
-      { name: "Minecraft (1.9)", url: "https://html.cafe/x56360a59" },
-      { name: "Minecraft (1.9 Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/1-9.html" },
-      { name: "Minecraft (1.11)", url: "https://d272xss3wq00xu.cloudfront.net/1-11.html" },
-      { name: "Resent Client Eagler (1.8)", url: "https://reslauncher4.vercel.app" },
-      { name: "Starlike Client Eagler (1.16- kinda)", url: "https://starlike.zumbiepig.dev/" },
-      { name: "Eaglercraft (1.20)", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/964c4358-60a7-4121-908e-63f6ae6e5ef0" },
-      { name: "Eaglercraft Versions & Clients", url: "https://html.cafe/x7922b580" },
-      { name: "Roblox (Easyfun.gg)", url: "https://www.easyfun.gg/games/roblox.html" },
-      { name: "Roblox (Now.gg) cq4z", url: "https://dashboard-cq4z.onrender.com/?ng_ifp_partner=skool" },
-      { name: "Roblox (Now.gg 2) Tortilla", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/550673cd-2d7e-437e-ab86-baa249b52dd0" },
-      { name: "Roblox (Now.gg 3) Nowgg.lol", url: "https://nowgg.lol/" },
-      { name: "Roblox (Now.gg 4, best) Vercel", url: "https://pathetic-roblox-main.vercel.app/" },
-      { name: "Roblox (Now.gg 5) About:blank", url: "https://html.cafe/x8bcb5934" },
-      { name: "Roblox (Now.gg 6) s2g3", url: "https://s2g3.onrender.com" },
-      { name: "Tortilla Games", url: "https://dfs3rzq44v6as.cloudfront.net"},
-      { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
-      { name: "Five Nights At Winston's", url: "https://g.deev.is/fnaw" },
-      { name: "1 (Reversed 2048)", url: "https://d272xss3wq00xu.cloudfront.net/2048/index.html" },
-      { name: "Bottle Flip 3D", url: "https://d272xss3wq00xu.cloudfront.net/bottle-flip-3d/index.html" },
-      { name: "Neal.fun", url: "https://neal.fun" },
-      { name: "Subway Surfers", url: "https://dddavit.github.io/subway/" },
-      { name: "Slope", url: "https://mathadventure1.github.io/slope/slope/index.html" },
-      { name: "Slope 2", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Slope%202" },
-      { name: "Slope 3", url: "https://slope3.com/" },
-      { name: "Cookie Clicker", url: "https://eli-schwartz.github.io/cookieclicker/" },
-      { name: "Drive Mad", url: "https://ubg365.github.io/drive-mad/play.html" },
-      { name: "Drive Mad (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/drivemad/index.html" },
-      { name: "Drive Mad Mod", url: "https://play.fancade.com/63BA239C20C40BF3" }, 
-      { name: "BitLife", url: "https://ubg365.github.io/bitlife-life-simulator/play.html" },
-      { name: "Ztype", url: "https://zty.pe" },
-      { name: "3kh0.github.io (ad spammy)", url: "https://3kh0.github.io" },
-      { name: "Hover Racer Drive", url: "https://ubg365.github.io/hover-racer-drive/" },
-      { name: "Monkey Mart", url: "https://ubg365.github.io/monkey-mart/play.html" },
-      { name: "Drift Boss", url: "https://ubg365.github.io/drift-boss/" },
-      { name: "Madalin Stunt Cars 2", url: "https://ubg100.github.io/games/Madalin/index.html" },
-      { name: "Breaking the bank", url: "https://mountain658.github.io/zbreakingthebank.html" },
-      { name: "Escaping the prison", url: "https://mountain658.github.io/zescapetheprison.html" },
-      { name: "Stealing the diamond", url: "https://mountain658.github.io/zstealingthediamond.html" },
-      { name: "Infiltrating the airship", url: "https://sz-games.github.io/games/Flash.html?game=/games/henry-airship/infiltratingtheairshipgame.swf" },
-      { name: "Fleeing the complex", url: "https://sz-games.github.io/games/Flash.html?game=https://sz-games.github.io/Games6/Henry%20Stickmin%20-%20Fleeing%20the%20Complex.swf?raw=true" },
-      { name: "Free Rider", url: "https://freeriderhd.com" },
-      { name: "Run 3", url: "https://lekug.github.io/tn6pS9dCf37xAhkJv/" },
-      { name: "Bloxorz", url: "https://ad-freegames.github.io/flash/game/bloxorz.html" },
-      { name: "Drift Hunters", url: "https://htmlxm.github.io/h/drift-hunters/" },
-      { name: "Venge.io", url: "https://venge.io/" },
-      { name: "Highway Racer Pro", url: "https://unblocked-games.s3.amazonaws.com/highway-racer-pro.html" }, 
-      { name: "Hole.io", url: "https://hole-io.com/" },
-      { name: "Drift Hunters 2024", url: "https://unblocked-games.s3.amazonaws.com/drift-hunters-2024.html" },
-      { name: "Webcraft", url: "https://jesgran.is-a.dev/webcraft/" }, 
-      { name: "Sandspiel Studio", url: "https://studio.sandspiel.club" },
-      { name: "Gamble", url: "https://www.yurk.com/games/black/" },
-      { name: "FNAF", url: "https://ubg77.github.io/fix/fnaf1/" },
-      { name: "Krunker.io", url: "https://krunker.io/" },
-      { name: "Tomb of the mask", url: "https://mountain658.github.io/g/tombofthemask/index.html" },
-      { name: "worldguessr", url: "https://www.worldguessr.com/" },
-      { name: "MinecraftSkins.net", url: "https://minecraftskins.net" },
-      { name: "Now.gg", url: "https://now.gg/games.html" },
-      { name: "Skindex", url: "https://skindex.pro" },
-      { name: "RadioStations", url: "https://radio.garden/" },
-      { name: "Windows93Emulator", url: "https://v1.windows93.net/" },
-      { name: "Mr. Bullet", url:"https://www.yurk.com/games/mrbullet/" },
-      { name: "Sandspiel", url: "https://sandspiel.club" },
-      { name: "Slow Roads", url: "https://slowroads.io" },
-      { name: "Slow Roads (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/slow-roads/index.html" },
-      { name: "Edys Car Simulator", url: "https://unblocked-games.s3.amazonaws.com/edys-car-simulator.html" },
-      { name: "Backrooms", url: "https://adfree3kh0.github.io/projects/backrooms/index.html" },
-      { name: "Impossible Quiz", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Impossible%20Quiz" },
-      { name: "Impossible Quiz (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/impossiblequiz/index.html" },
-      { name: "Among Us Singleplayer", url: "https://adfree3kh0.github.io/projects/among-us/index.html" }, 
-      { name: "Windows XP Emulator", url: "https://winxp.vercel.app/" },
-      { name: "Eggy Car", url: "https://www.yurk.com/games/eggycar/" },
-      { name: "Eggy Car (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/eggy-car/index.html" },
-      { name: "Turbowarp Packager (Download Scratch Projects)", url: "https://packager.turbowarp.org" },
-      { name: "Bad Piggies", url: "https://www.friv.cm/bad-piggies/fullscreen/" },
-      { name: "Cluster Rush",  url: "https://duckmath.org/g4m3s/cluster-rush.html" },
-      { name: "Crossy Road", url: "https://selenite.cc/semag/crossyroad/index.html" },
-      { name: "Crossy Road (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/crossyroad/index.html" },
-      { name: "1v1.lol", url: "https://selenite.cc/semag/1v1lol/index.html" },
-      { name: "Bloxd.io", url: "https://bloxd.io" },
-      { name: "CubeRealm.io", url: "https://cuberealm.io/" },
-      { name: "Aim Trainer", url: "https://aimtrainer.io/" },
-      { name: "Scrap Metal 1", url: "https://www.gamearter.com/game/scrap-metal/" },  
-      { name: "Scrap Metal 2", url: "https://www.gamearter.com/game/scrap-metal-2/" },
-      { name: "Scrap Metal 3", url: "https://adfree3kh0.github.io/projects/scrapmetal/index.html" },  
-      { name: "Scrap Metal 4", url: "https://www.gamearter.com/game/scrap-metal-4/" },
-      { name: "Scrap Metal 5", url: "https://www.gamearter.com/game/scrap-metal-5/" },
-      { name: "Scrap Metal 6", url: "https://www.gamearter.com/game/scrap-metal-6/" },
-      { name: "GameArter", url: "https://www.gamearter.com/games" },
-      { name: "Obby Robby Only Up", url: "https://html.cafe/x3d7ef5a3" },
-      { name: "FreezeNova", url: "https://unblocked-games.s3.amazonaws.com/index.html"},
-      { name: "Geometry Dash Lite", url: "https://selenite.cc/semag/gdlite/index.html" },
-      { name: "FNAF 2", url: "https://selenite.cc/semag/fnaf2/index.html" },
-      { name: "FNAF 3", url: "https://selenite.cc/semag/fnaf3/index.html" },
-      { name: "FNAF 4", url: "https://selenite.cc/semag/fnaf4/index.html" },
-      { name: "FNAF 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/FNAF4/index.html" },
-      { name: "Selenite Minecraft", url: "https://selenite.cc/semag/eaglercraft/index.html" },
-      { name: "MEGA Client", url: "https://megaclient.vercel.app" },
-      { name: "LittleBigSnake", url: "https://littlebigsnake.com" },
-      { name: "Surviv.io", url: "https://surviv.io" },
-      { name: "Spacebar Clicker", url: "https://unblocked-games.s3.amazonaws.com/spacebar-clicker.html" },
-      { name: "Deadshot.io", url: "https://deadshot.io" },
-      { name: "Clicker", url: "https://elucidation.github.io/ClickerJs/" },
-      { name: "Smashkarts.io", url: "https://smashkarts.io" },
-      { name: "Pixel Force", url: "https://www.yurk.com/games/pixelforce/" },
-      { name: "Happy Glass", url: "https://www.yurk.com/games/happyglass/" },
-      { name: "Selenite (fixed)", url: "https://selenite.cc/" },
-      { name: "Duck Life 1", url: "https://selenite.cc/semag/ducklife1/index.html" },
-      { name: "Duck Life 2", url: "https://selenite.cc/semag/ducklife2/index.html" },
-      { name: "Duck Life 3", url: "https://selenite.cc/semag/ducklife3/index.html" },
-      { name: "Duck Life 4", url: "https://selenite.cc/semag/ducklife4/index.html" },
-      { name: "Duck Life 5", url: "https://selenite.cc/semag/ducklife5/index.html" },
-      { name: "Duck Life 6", url: "https://selenite.cc/semag/ducklife6/index.html" },
-      { name: "Stick Running", url: "https://www.yurk.com/games/stickrunning/" },
-      { name: "Happy Filled Glass", url: "https://www.yurk.com/games/happyfilledglass/" },
-      { name: "Hypackel Games", url: "https://d3rtzzzsiu7gdr.cloudfront.net/settings.html" },  
-      { name: "Elastic Man", url: "https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html" },
-      { name: "Tunnel Rush", url: "https://ubg44.github.io/TunnelRush/" },
-      { name: "Cookie Clicker 2024 (Click link)", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/cookieclicker/game/index.html" },
-      { name: "Interactive Buddy", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Interactive%20Buddy" },
-      { name: "Baldis Basics", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/baldisbasics/index.html" },
-      { name: "Minecraft Classic", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/minecraft-classic/index.html" },
-      { name: "Angry Birds", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/AngryBirdsWebGL/index.html" },
-      { name: "Minecraft 1.8", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Eaglercraft%20(MC)#" },
-      { name: "Precision Client Eagler", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/projects/precision-client/index.html" },
-      { name: "2048", url: "https://2048game.com/" },
-      { name: "Flappy Bird", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/flappybird/index.html" },
-      { name: "1v1.lol", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?1v1.LOL%20[Needs%20Internet]" },
-      { name: "Win11 in React", url: "https://win11.blueedge.me" },
-      { name: "Hypackel 2", url: "https://hypackel.com" },
-      { name: "Hypackel 3", url: "https://hypackel.github.io" },
-      { name: "Hypackel 4", url: "https://hypackellite.vercel.app/settings.html" },
-      { name: "1v1.lol Fortnite - Play at home", url: "https://1v1.lol" },
-      { name: "Impossible Quiz 2", url: "https://archive.org/details/tiq2_swf" },
-      { name: "Now.gg Method 2", url: "https://web.archive.org/web/20241112154118/now.gg" },
-      { name: "Web Archive", url: "https://web.archive.org" },
-      { name: "Astra Client Eagler", url: "https://barneycompiler.github.io/AstraClientEagler/javascript" },
-      { name: "Tetris", url: "https://tetris.com/play-tetris" },
-      { name: "Glitch Text Generator", url: "https://lingojam.com/GlitchTextGenerator" },
-      { name: "Barney's Website", url: "https://html.cafe/x715d6947" },
-      { name: "Stickman Swing", url: "https://www.yurk.com/games/stickmanswing"},
-      { name: "Google Easter Egg Games", url: "https://elgoog.im" },
-      { name: "Duck Math Games", url: "https://duckmath.org/index.html" },
-      { name: "Chill Radio", url: "https://www.chilltrax.com/" },
-      { name: "Tower of Treasure", url: "https://beinternetawesome.withgoogle.com/en_us/interland/landing/tower-of-treasure" },
-      { name: "Fancy Text Generator", url: "https://lingojam.com/FancyTextGenerator" },
-      { name: "Yurk.com", url: "https://yurk.com" },
-      { name: "Australian Man Website", url: "https://html.cafe/xf91164ad" },
-      { name: "SigmaFart", url: "https://html.cafe/x4922b615" },
-      { name: "Bottle Flip 3D", url: "https://d3rtzzzsiu7gdr.cloudfront.net/play/index.html?Bottle%20Flip%203D" },
-      { name: "Friv.com", url: "https://friv.com" },
-      { name: "Download British Man Website", url: "https://html.cafe/xf3b7d5cc" },
-      { name: "British Man Website (Roblox!)", url: "https://html.cafe/x8a3e2b9b" },
-      { name: "Helios Proxy (credits to Dinguschan-owo on github)", url: "https://helios-browser.vercel.app" },
-      { name: "Dingus Proxy (credits to Dinguschan-owo on github)", url: "https://html.cafe/x40ceaed5" },
-      { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
-      { name: "Slither.io Ripoff", url: "https://gulper.io/" },
-      { name: "Infinite Craft", url: "https://infinite-craft.com/infinite-craft/" },
-      { name: "Baldis Basics Method 2", url: "https://igroutka.ru/loader/game/26471/" },
-      { name: "We Become what we Behold", url: "https://gnhustgames.github.io/wbwwb/" },
-      { name: "Time Shooter", url: "https://games.crazygames.com/en_US/time-shooter/index.html" },
-      { name: "Time Shooter 2", url: "https://games.crazygames.com/en_US/time-shooter-2/index.html" },
-      { name: "Time Shooter 3", url: "https://games.crazygames.com/en_US/time-shooter-3-swat/index.html" },
-      { name: "Chrome Dino", url: "https://htmlxm.github.io/h7/dinosaur-game/" },
-      { name: "Getting over it ( Scratch )", url: "https://turbowarp.org/389464290/embed?autoplay&addons=remove-curved-stage-border,pause,gamepad" },
-      { name: "1v1.lol Method 3", url: "https://player.work/1v1lol/index.html" },
-      { name: "HTML.cafe Gallery", url: "https://html.cafe/gallery" },
-      { name: "Eaglercraft Clients", url: "https://eaglercraftx1-8.github.io/" },
-      { name: "Slither.io", url: "http://slither.com/io" },
-      { name: "Easyfun.gg", url: "https://easyfun.gg" },
-      { name: "Ballistic", url: "https://d272xss3wq00xu.cloudfront.net/ballistic/index.html" },
-      { name: "Minecraft Java Edition", url: "https://mcraft.fun" },
-      { name: "Mood Tracker", url: "https://html.cafe/xb2c91b5a" },
-      { name: "Guess The Number Game", url: "https://html.cafe/x63aefeaa" },
-      { name: "HTML Editor", url: "https://spacenerd24.github.io/Online-HTML-Viewer/" },
-      { name: "Selenite Method 2", url: "https://selenite-copy.pages.dev" },
-      { name: "Astroid.gg Games + Apps + Proxy", url: "https://astroid.gg/" },
-      { name: "Always Impostor", url: "https://html5.gamedistribution.com/9abe6af0fbb440b98a3e24bf7fb0636a/?gd_sdk_referrer_url=https://kevin.games/always-impostor" },
-      { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/src/browser/" },
-      { name: "2D kinda space shooting game", url: "https://html.cafe/x704e8436" },
-      { name: "WebMC (Eaglercraft Launcher)", url: "https://webmc.xyz/" },
-      { name: "Vex 3", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/85266bc0-927a-4c24-b7b2-4dd34a0c1c6a" },
-      { name: "Vex 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex3/index.html" },
-      { name: "Vex 4", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/0f85cdc3-db02-4e24-8103-5190d86e63dc" },
-      { name: "Vex 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex4/index.html" },
-      { name: "Vex 5", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ce8df8b-a3f3-4887-bb7a-0c0b1f312bfb" },
-      { name: "Vex 6", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ec8754e-65c7-45bf-90f3-b342c4e33cc4" },
-      { name: "Vex 6 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex6/index.html" },
-      { name: "Vex 7", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/a7abe0b4-e894-4799-89e8-b9806e7e33f6" },
-      { name: "Geometry dash ( Real )", url: "https://nowgg.lol/apps/robtop-games/1400/geometry-dash.html" },
-      { name: "Stumble guys ( Server 1 )", url: "https://www.stumbleguys.com/play" },
-      { name: "Stumble guys ( server 2 )", url: "https://nowgg.lol/apps/kitika-games/7999/stumble-guys.html" },
-      { name: "Cookie Clicker 2024 Method 2", url: "https://cookieclickerunblocked.github.io/games/cookie-clicker/index.html" },
-      { name: "Sandspiel Ripoff (Sandsaga)", url: "https://sandsaga.com" },
-      { name: "BitLife (Server 2)", url: "https://geometryspot.help/bitlife/1.html" },
-      { name: "Bitlife (Server 3)", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },
-      { name: "Scrap Metal 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/scrapmetal/index.html" },
-      { name: "GlacierOS", url: "https://learn.englishrealm.ca/" },
-      { name: "Rocket Bot Royale", url: "https://rocketbotroyale2.winterpixel.io" },
-      { name: "Retro Bowl", url: "https://ethonion10.neocities.org/" },
-      { name: "Windows 10 Emulator", url: "https://dustinbrett.com/" },
-      { name: "AaronOS", url: "https://aaronos.dev/" },
-      { name: "Windows 96", url: "https://windows96.net/" },
-      { name: "Tinfoil Proxy & Games (About:blank cloak)", url: "https://assignment.jmwubg.com.au/" },
-      { name: "Soundboard", url: "https://sprintingsnail69.github.io/coolsounds/" },
-      { name: "Tortilla Minecraft Games", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/ac150b87-7ba6-4b28-b18e-82d034bb521d" },
-      { name: "Shell Shockers", url: "https://shellshock.io/" },
-      { name: "Moto X3M", url: "https://ubg365.github.io/moto-x3m/play.html" },
-      { name: "Moto X3M 2", url: "https://slope-game.github.io/newgame/motox3m-2/" },
-      { name: "Moto X3M 3", url: "https://slope-game.github.io/newgame/motox3m-3/" },
-      { name: "Moto X3M Winter", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-winter/index.html" },
-      { name: "Moto X3M Pool Party", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-pool-party/index.html" },
-      { name: "Moto X3M Spooky Land", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-spooky-land/index.html" },
-      { name: "Death Run 3D", url: "https://ubg365.github.io/death-run-3d/" },
-      { name: "EggyCar", url: "https://ubg365.github.io/eggy-car/play.html" },
-      { name: "Stack", url: "https://ubg365.github.io/stack/" },
-      { name: "Super Mario 64", url: "https://downloads.retrostic.com/play.php?console_slug=n64&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%2064%20%28U%29%20%5B%21%5D.zip" },
-      { name: "Asteroids ( 1986 )", url: "https://downloads.retrostic.com/play.php?console_slug=atari-7800&rom_url=https://downloads.retrostic.com/roms/Asteroids.zip" },
-      { name: "Asteroids ( 1979 )", url: "https://online-emulators.com/arcade/Asteroids_(rev_2)/asteroid" },
-      { name: "Bosconian", url: "https://www.retrogames.cc/embed/42458-bosconian-old-version.html" },
-      { name: "Doom", url: "https://bestdosgames.com/games/doom/play" },
-      { name: "Half-Life 1", url: "https://x8bitrain.github.io/webXash/" },
-      { name: "Tetris ( NES )", url: "https://downloads.retrostic.com/play.php?console_slug=nes&rom_url=https://downloads.retrostic.com/roms/Tetris%20%28USA%29.zip" },
-      { name: "EarthBound", url: "https://downloads.retrostic.com/play.php?console_slug=snes&rom_url=https://downloads.retrostic.com/roms/EarthBound%20%28USA%29.zip" },
-      { name: "Pac Man", url: "https://downloads.retrostic.com/play.php?console_slug=mame&rom_url=https://downloads.retrostic.com/roms/pacman.zip" },
-      { name: "New rally x", url: "https://www.retrogames.cc/embed/9312-new-rally-x.html" },
-      { name: "Super Mario Bros", url: "https://downloads.retrostic.com/play.php?console_slug=nes&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%20Bros%20%28E%29.zip" },
-      { name: "Entertopia", url: "https://html.cafe/x92c3d890" },
-      { name: "Fake Hacking Prank", url: "https://geektyper.com/" },
-      { name: "test", url: "https://www.haleyschool.com/rammerhead-proxies/" },  
-      { name: "Classroom Games", url: "https://dnrweqffuwjtx.cloudfront.net/" },
-      { name: "Distributions Game", url: "https://d10o6em2qtnr4q.cloudfront.net/assets/ca72aa6abe504291b749002226ef9094/index.html" },
-      { name: "HTML.cafe", url: "https://html.cafe/" },
-      { name: "Real Windows 11 in browser", url: "https://app.apponfly.com/trial" },
-      { name: "Sonic CD", url: "https://tws2401.github.io/Sonic-CD-WASM/" },
-      { name: "Test", url: "" }, 
-        
+            { name: "Skribbl.io", url: "https://skribbl.io" }, // fire game
+            { name: "Android App Launcher", url: "https://nowgg.lol/apps/frogiee1/69420/custom-thingy-loader.html" },
+            { name: "Barney's Website", url: "https://html.cafe/x715d6947" },
+            { name: "Minecraft (1.5)", url: "https://eaglercraft.glitch.me/" },
+            { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
+            { name: "Eaglercraft Server List", url: "https://servers.eaglercraft.com/" },
+            { name: "Minecraft 1.8 (Web Assembly, FPS Boost)", url: "https://eaglercraft.com/mc/1.8.8-wasm/" },
+            { name: "Minecraft (1.9)", url: "https://html.cafe/x56360a59" },
+            { name: "Minecraft (1.9 Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/1-9.html" },
+            { name: "Minecraft (1.11)", url: "https://d272xss3wq00xu.cloudfront.net/1-11.html" },
+            { name: "Resent Client Eagler (1.8)", url: "https://reslauncher4.vercel.app" },
+            { name: "Starlike Client Eagler (1.16- kinda)", url: "https://starlike.zumbiepig.dev/" },
+            { name: "Eaglercraft (1.20)", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/964c4358-60a7-4121-908e-63f6ae6e5ef0" },
+            { name: "Eaglercraft Versions & Clients", url: "https://html.cafe/x7922b580" },
+            { name: "Eaglercraft Versions & Clients 2", url: "https://html.cafe/xd8de3a20" },
+            { name: "Roblox (Easyfun.gg)", url: "https://www.easyfun.gg/games/roblox.html" },
+            { name: "Roblox (Now.gg) cq4z", url: "https://dashboard-cq4z.onrender.com/?ng_ifp_partner=skool" },
+            { name: "Roblox (Now.gg 2) Tortilla", url: "https://dfs3rzq44v6as.cloudfront.net/?frame=fullscreen/#/lessons/550673cd-2d7e-437e-ab86-baa249b52dd0" },
+            { name: "Roblox (Now.gg 3) Nowgg.lol", url: "https://nowgg.lol/" },
+            { name: "Roblox (Now.gg 4, best) Vercel", url: "https://pathetic-roblox-main.vercel.app/" },
+            { name: "Roblox (Now.gg 5) About:blank", url: "https://html.cafe/x8bcb5934" },
+            { name: "Roblox (Now.gg 6) s2g3", url: "https://s2g3.onrender.com" },
+            { name: "Tortilla Games", url: "https://dfs3rzq44v6as.cloudfront.net"},
+            { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
+            { name: "Five Nights At Winston's", url: "https://g.deev.is/fnaw" },
+            { name: "1 (Reversed 2048)", url: "https://d272xss3wq00xu.cloudfront.net/2048/index.html" },
+            { name: "Bottle Flip 3D", url: "https://d272xss3wq00xu.cloudfront.net/bottle-flip-3d/index.html" },
+            { name: "Neal.fun", url: "https://neal.fun" },
+            { name: "Subway Surfers", url: "https://dddavit.github.io/subway/" },
+            { name: "Slope", url: "https://mathadventure1.github.io/slope/slope/index.html" },
+            { name: "Slope 2", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Slope%202" },
+            { name: "Slope 3", url: "https://slope3.com/" },
+            { name: "Cookie Clicker", url: "https://eli-schwartz.github.io/cookieclicker/" },
+            { name: "Drive Mad", url: "https://ubg365.github.io/drive-mad/play.html" },
+            { name: "Drive Mad (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/drivemad/index.html" },
+            { name: "Drive Mad Mod", url: "https://play.fancade.com/63BA239C20C40BF3" }, 
+            { name: "BitLife", url: "https://ubg365.github.io/bitlife-life-simulator/play.html" },
+            { name: "Ztype", url: "https://zty.pe" },
+            { name: "3kh0.github.io (ad spammy)", url: "https://3kh0.github.io" },
+            { name: "Hover Racer Drive", url: "https://ubg365.github.io/hover-racer-drive/" },
+            { name: "Monkey Mart", url: "https://ubg365.github.io/monkey-mart/play.html" },
+            { name: "Drift Boss", url: "https://ubg365.github.io/drift-boss/" },
+            { name: "Madalin Stunt Cars 2", url: "https://ubg100.github.io/games/Madalin/index.html" },
+            { name: "Breaking the bank", url: "https://mountain658.github.io/zbreakingthebank.html" },
+            { name: "Escaping the prison", url: "https://mountain658.github.io/zescapetheprison.html" },
+            { name: "Stealing the diamond", url: "https://mountain658.github.io/zstealingthediamond.html" },
+            { name: "Infiltrating the airship", url: "https://sz-games.github.io/games/Flash.html?game=/games/henry-airship/infiltratingtheairshipgame.swf" },
+            { name: "Fleeing the complex", url: "https://sz-games.github.io/games/Flash.html?game=https://sz-games.github.io/Games6/Henry%20Stickmin%20-%20Fleeing%20the%20Complex.swf?raw=true" },
+            { name: "Free Rider", url: "https://freeriderhd.com" },
+            { name: "Run 3", url: "https://lekug.github.io/tn6pS9dCf37xAhkJv/" },
+            { name: "Bloxorz", url: "https://ad-freegames.github.io/flash/game/bloxorz.html" },
+            { name: "Drift Hunters", url: "https://htmlxm.github.io/h/drift-hunters/" },
+            { name: "Venge.io", url: "https://venge.io/" },
+            { name: "Highway Racer Pro", url: "https://unblocked-games.s3.amazonaws.com/highway-racer-pro.html" }, 
+            { name: "Hole.io", url: "https://hole-io.com/" },
+            { name: "Drift Hunters 2024", url: "https://unblocked-games.s3.amazonaws.com/drift-hunters-2024.html" },
+            { name: "Webcraft", url: "https://jesgran.is-a.dev/webcraft/" }, 
+            { name: "Sandspiel Studio", url: "https://studio.sandspiel.club" },
+            { name: "Gamble", url: "https://www.yurk.com/games/black/" },
+            { name: "FNAF", url: "https://ubg77.github.io/fix/fnaf1/" },
+            { name: "Krunker.io", url: "https://krunker.io/" },
+            { name: "Tomb of the mask", url: "https://mountain658.github.io/g/tombofthemask/index.html" },
+            { name: "worldguessr", url: "https://www.worldguessr.com/" },
+            { name: "MinecraftSkins.net", url: "https://minecraftskins.net" },
+            { name: "Now.gg", url: "https://now.gg/games.html" },
+            { name: "Skindex", url: "https://skindex.pro" },
+            { name: "RadioStations", url: "https://radio.garden/" },
+            { name: "Windows93Emulator", url: "https://v1.windows93.net/" },
+            { name: "Mr. Bullet", url:"https://www.yurk.com/games/mrbullet/" },
+            { name: "Sandspiel", url: "https://sandspiel.club" },
+            { name: "Slow Roads", url: "https://slowroads.io" },
+            { name: "Slow Roads (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/slow-roads/index.html" },
+            { name: "Edys Car Simulator", url: "https://unblocked-games.s3.amazonaws.com/edys-car-simulator.html" },
+            { name: "Backrooms", url: "https://adfree3kh0.github.io/projects/backrooms/index.html" },
+            { name: "Impossible Quiz", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Impossible%20Quiz" },
+            { name: "Impossible Quiz (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/impossiblequiz/index.html" },
+            { name: "Among Us Singleplayer", url: "https://adfree3kh0.github.io/projects/among-us/index.html" }, 
+            { name: "Windows XP Emulator", url: "https://winxp.vercel.app/" },
+            { name: "Eggy Car", url: "https://www.yurk.com/games/eggycar/" },
+            { name: "Eggy Car (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/eggy-car/index.html" },
+            { name: "Turbowarp Packager (Download Scratch Projects)", url: "https://packager.turbowarp.org" },
+            { name: "Bad Piggies", url: "https://www.friv.cm/bad-piggies/fullscreen/" },
+            { name: "Cluster Rush",  url: "https://duckmath.org/g4m3s/cluster-rush.html" },
+            { name: "Crossy Road", url: "https://selenite.cc/semag/crossyroad/index.html" },
+            { name: "Crossy Road (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/crossyroad/index.html" },
+            { name: "1v1.lol", url: "https://selenite.cc/semag/1v1lol/index.html" },
+            { name: "Bloxd.io", url: "https://bloxd.io" },
+            { name: "CubeRealm.io", url: "https://cuberealm.io/" },
+            { name: "Aim Trainer", url: "https://aimtrainer.io/" },
+            { name: "Scrap Metal 1", url: "https://www.gamearter.com/game/scrap-metal/" },  
+            { name: "Scrap Metal 2", url: "https://www.gamearter.com/game/scrap-metal-2/" },
+            { name: "Scrap Metal 3", url: "https://adfree3kh0.github.io/projects/scrapmetal/index.html" },  
+            { name: "Scrap Metal 4", url: "https://www.gamearter.com/game/scrap-metal-4/" },
+            { name: "Scrap Metal 5", url: "https://www.gamearter.com/game/scrap-metal-5/" },
+            { name: "Scrap Metal 6", url: "https://www.gamearter.com/game/scrap-metal-6/" },
+            { name: "GameArter", url: "https://www.gamearter.com/games" },
+            { name: "Obby Robby Only Up", url: "https://html.cafe/x3d7ef5a3" },
+            { name: "FreezeNova", url: "https://unblocked-games.s3.amazonaws.com/index.html"},
+            { name: "Geometry Dash Lite", url: "https://selenite.cc/semag/gdlite/index.html" },
+            { name: "FNAF 2", url: "https://selenite.cc/semag/fnaf2/index.html" },
+            { name: "FNAF 3", url: "https://selenite.cc/semag/fnaf3/index.html" },
+            { name: "FNAF 4", url: "https://selenite.cc/semag/fnaf4/index.html" },
+            { name: "FNAF 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/FNAF4/index.html" },
+            { name: "Selenite Minecraft", url: "https://selenite.cc/semag/eaglercraft/index.html" },
+            { name: "MEGA Client", url: "https://megaclient.vercel.app" },
+            { name: "LittleBigSnake", url: "https://littlebigsnake.com" },
+            { name: "Surviv.io", url: "https://surviv.io" },
+            { name: "Spacebar Clicker", url: "https://unblocked-games.s3.amazonaws.com/spacebar-clicker.html" },
+            { name: "Deadshot.io", url: "https://deadshot.io" },
+            { name: "Clicker", url: "https://elucidation.github.io/ClickerJs/" },
+            { name: "Smashkarts.io", url: "https://smashkarts.io" },
+            { name: "Pixel Force", url: "https://www.yurk.com/games/pixelforce/" },
+            { name: "Happy Glass", url: "https://www.yurk.com/games/happyglass/" },
+            { name: "Selenite (fixed)", url: "https://selenite.cc/" },
+            { name: "Duck Life 1", url: "https://selenite.cc/semag/ducklife1/index.html" },
+            { name: "Duck Life 2", url: "https://selenite.cc/semag/ducklife2/index.html" },
+            { name: "Duck Life 3", url: "https://selenite.cc/semag/ducklife3/index.html" },
+            { name: "Duck Life 4", url: "https://selenite.cc/semag/ducklife4/index.html" },
+            { name: "Duck Life 5", url: "https://selenite.cc/semag/ducklife5/index.html" },
+            { name: "Duck Life 6", url: "https://selenite.cc/semag/ducklife6/index.html" },
+            { name: "Stick Running", url: "https://www.yurk.com/games/stickrunning/" },
+            { name: "Happy Filled Glass", url: "https://www.yurk.com/games/happyfilledglass/" },
+            { name: "Hypackel Games", url: "https://d3rtzzzsiu7gdr.cloudfront.net/settings.html" },  
+            { name: "Elastic Man", url: "https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html" },
+            { name: "Tunnel Rush", url: "https://ubg44.github.io/TunnelRush/" },
+            { name: "Cookie Clicker 2024 (Click link)", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/cookieclicker/game/index.html" },
+            { name: "Interactive Buddy", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Interactive%20Buddy" },
+            { name: "Baldis Basics", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/baldisbasics/index.html" },
+            { name: "Minecraft Classic", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/minecraft-classic/index.html" },
+            { name: "Angry Birds", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/AngryBirdsWebGL/index.html" },
+            { name: "Minecraft 1.8", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?Eaglercraft%20(MC)#" },
+            { name: "Precision Client Eagler", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/projects/precision-client/index.html" },
+            { name: "2048", url: "https://2048game.com/" },
+            { name: "Flappy Bird", url: "https://d3rtzzzsiu7gdr.cloudfront.net/files/flappybird/index.html" },
+            { name: "1v1.lol", url: "https://d3rtzzzsiu7gdr.cloudfront.net/gameplayer/index.html?1v1.LOL%20[Needs%20Internet]" },
+            { name: "Win11 in React", url: "https://win11.blueedge.me" },
+            { name: "Hypackel 2", url: "https://hypackel.com" },
+            { name: "Hypackel 3", url: "https://hypackel.github.io" },
+            { name: "Hypackel 4", url: "https://hypackellite.vercel.app/settings.html" },
+            { name: "1v1.lol Fortnite - Play at home", url: "https://1v1.lol" },
+            { name: "Impossible Quiz 2", url: "https://archive.org/details/tiq2_swf" },
+            { name: "Now.gg Method 2", url: "https://web.archive.org/web/20241112154118/now.gg" },
+            { name: "Web Archive", url: "https://web.archive.org" },
+            { name: "Astra Client Eagler", url: "https://barneycompiler.github.io/AstraClientEagler/javascript" },
+            { name: "Tetris", url: "https://tetris.com/play-tetris" },
+            { name: "Glitch Text Generator", url: "https://lingojam.com/GlitchTextGenerator" },
+            { name: "Stickman Swing", url: "https://www.yurk.com/games/stickmanswing"},
+            { name: "Google Easter Egg Games", url: "https://elgoog.im" },
+            { name: "Duck Math Games", url: "https://duckmath.org/index.html" },
+            { name: "Chill Radio", url: "https://www.chilltrax.com/" },
+            { name: "Tower of Treasure", url: "https://beinternetawesome.withgoogle.com/en_us/interland/landing/tower-of-treasure" },
+            { name: "Fancy Text Generator", url: "https://lingojam.com/FancyTextGenerator" },
+            { name: "Yurk.com", url: "https://yurk.com" },
+            { name: "Australian Man Website", url: "https://html.cafe/xf91164ad" },
+            { name: "SigmaFart", url: "https://html.cafe/x4922b615" },
+            { name: "Bottle Flip 3D", url: "https://d3rtzzzsiu7gdr.cloudfront.net/play/index.html?Bottle%20Flip%203D" },
+            { name: "Friv.com", url: "https://friv.com" },
+            { name: "Download British Man Website", url: "https://html.cafe/xf3b7d5cc" },
+            { name: "British Man Website (Roblox!)", url: "https://html.cafe/x8a3e2b9b" },
+            { name: "Helios Proxy (credits to Dinguschan-owo on github)", url: "https://helios-browser.vercel.app" },
+            { name: "Dingus Proxy (credits to Dinguschan-owo on github)", url: "https://html.cafe/x40ceaed5" },
+            { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
+            { name: "Slither.io Ripoff", url: "https://gulper.io/" },
+            { name: "Infinite Craft", url: "https://infinite-craft.com/infinite-craft/" },
+            { name: "Baldis Basics Method 2", url: "https://igroutka.ru/loader/game/26471/" },
+            { name: "We Become what we Behold", url: "https://gnhustgames.github.io/wbwwb/" },
+            { name: "Time Shooter", url: "https://games.crazygames.com/en_US/time-shooter/index.html" },
+            { name: "Time Shooter 2", url: "https://games.crazygames.com/en_US/time-shooter-2/index.html" },
+            { name: "Time Shooter 3", url: "https://games.crazygames.com/en_US/time-shooter-3-swat/index.html" },
+            { name: "Chrome Dino", url: "https://htmlxm.github.io/h7/dinosaur-game/" },
+            { name: "Getting over it ( Scratch )", url: "https://turbowarp.org/389464290/embed?autoplay&addons=remove-curved-stage-border,pause,gamepad" },
+            { name: "1v1.lol Method 3", url: "https://player.work/1v1lol/index.html" },
+            { name: "HTML.cafe Gallery", url: "https://html.cafe/gallery" },
+            { name: "Eaglercraft Clients", url: "https://eaglercraftx1-8.github.io/" },
+            { name: "Slither.io", url: "http://slither.com/io" },
+            { name: "Easyfun.gg", url: "https://easyfun.gg" },
+            { name: "Ballistic", url: "https://d272xss3wq00xu.cloudfront.net/ballistic/index.html" },
+            { name: "Minecraft Java Edition", url: "https://mcraft.fun" },
+            { name: "Mood Tracker", url: "https://html.cafe/xb2c91b5a" },
+            { name: "Guess The Number Game", url: "https://html.cafe/x63aefeaa" },
+            { name: "HTML Editor", url: "https://spacenerd24.github.io/Online-HTML-Viewer/" },
+            { name: "Selenite Method 2", url: "https://selenite-copy.pages.dev" },
+            { name: "Astroid.gg Games + Apps + Proxy", url: "https://astroid.gg/" },
+            { name: "Always Impostor", url: "https://html5.gamedistribution.com/9abe6af0fbb440b98a3e24bf7fb0636a/?gd_sdk_referrer_url=https://kevin.games/always-impostor" },
+            { name: "Infinite Tutoring Proxy", url: "https://infinitetutoring.com.au/history/src/browser/" },
+            { name: "2D kinda space shooting game", url: "https://html.cafe/x704e8436" },
+            { name: "WebMC (Eaglercraft Launcher)", url: "https://webmc.xyz/" },
+            { name: "Vex 3", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/85266bc0-927a-4c24-b7b2-4dd34a0c1c6a" },
+            { name: "Vex 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex3/index.html" },
+            { name: "Vex 4", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/0f85cdc3-db02-4e24-8103-5190d86e63dc" },
+            { name: "Vex 4 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex4/index.html" },
+            { name: "Vex 5", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ce8df8b-a3f3-4887-bb7a-0c0b1f312bfb" },
+            { name: "Vex 6", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/7ec8754e-65c7-45bf-90f3-b342c4e33cc4" },
+            { name: "Vex 6 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/vex6/index.html" },
+            { name: "Vex 7", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/a7abe0b4-e894-4799-89e8-b9806e7e33f6" },
+            { name: "Geometry dash ( Real )", url: "https://nowgg.lol/apps/robtop-games/1400/geometry-dash.html" },
+            { name: "Stumble guys ( Server 1 )", url: "https://www.stumbleguys.com/play" },
+            { name: "Stumble guys ( server 2 )", url: "https://nowgg.lol/apps/kitika-games/7999/stumble-guys.html" },
+            { name: "Cookie Clicker 2024 Method 2", url: "https://cookieclickerunblocked.github.io/games/cookie-clicker/index.html" },
+            { name: "Sandspiel Ripoff (Sandsaga)", url: "https://sandsaga.com" },
+            { name: "BitLife (Server 2)", url: "https://geometryspot.help/bitlife/1.html" },
+            { name: "Bitlife (Server 3)", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },
+            { name: "Scrap Metal 3 (Server 2)", url: "https://d272xss3wq00xu.cloudfront.net/scrapmetal/index.html" },
+            { name: "GlacierOS", url: "https://learn.englishrealm.ca/" },
+            { name: "Rocket Bot Royale", url: "https://rocketbotroyale2.winterpixel.io" },
+            { name: "Retro Bowl", url: "https://ethonion10.neocities.org/" },
+            { name: "Tinfoil Proxy & Games (About:blank cloak)", url: "https://assignment.jmwubg.com.au/" },
+            { name: "Soundboard", url: "https://sprintingsnail69.github.io/coolsounds/" },
+            { name: "Tortilla Minecraft Games", url: "https://dfs3rzq44v6as.cloudfront.net/#/lessons/ac150b87-7ba6-4b28-b18e-82d034bb521d" },
+            { name: "Shell Shockers", url: "https://shellshock.io/" },
+            { name: "Moto X3M", url: "https://ubg365.github.io/moto-x3m/play.html" },
+            { name: "Moto X3M 2", url: "https://slope-game.github.io/newgame/motox3m-2/" },
+            { name: "Moto X3M 3", url: "https://slope-game.github.io/newgame/motox3m-3/" },
+            { name: "Moto X3M Winter", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-winter/index.html" },
+            { name: "Moto X3M Pool Party", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-pool-party/index.html" },
+            { name: "Moto X3M Spooky Land", url: "https://unblocked-games.s3.amazonaws.com/games/2024/gm/moto-x3m-spooky-land/index.html" },
+            { name: "Death Run 3D", url: "https://ubg365.github.io/death-run-3d/" },
+            { name: "EggyCar", url: "https://ubg365.github.io/eggy-car/play.html" },
+            { name: "Stack", url: "https://ubg365.github.io/stack/" },
+            { name: "Super Mario 64", url: "https://downloads.retrostic.com/play.php?console_slug=n64&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%2064%20%28U%29%20%5B%21%5D.zip" },
+            { name: "Asteroids ( 1986 )", url: "https://downloads.retrostic.com/play.php?console_slug=atari-7800&rom_url=https://downloads.retrostic.com/roms/Asteroids.zip" },
+            { name: "Asteroids ( 1979 )", url: "https://online-emulators.com/arcade/Asteroids_(rev_2)/asteroid" },
+            { name: "Bosconian", url: "https://www.retrogames.cc/embed/42458-bosconian-old-version.html" },
+            { name: "Doom", url: "https://bestdosgames.com/games/doom/play" },
+            { name: "Half-Life 1", url: "https://x8bitrain.github.io/webXash/" },
+            { name: "Tetris ( NES )", url: "https://downloads.retrostic.com/play.php?console_slug=nes&rom_url=https://downloads.retrostic.com/roms/Tetris%20%28USA%29.zip" },
+            { name: "EarthBound", url: "https://downloads.retrostic.com/play.php?console_slug=snes&rom_url=https://downloads.retrostic.com/roms/EarthBound%20%28USA%29.zip" },
+            { name: "Pac Man", url: "https://downloads.retrostic.com/play.php?console_slug=mame&rom_url=https://downloads.retrostic.com/roms/pacman.zip" },
+            { name: "New rally x", url: "https://www.retrogames.cc/embed/9312-new-rally-x.html" },
+            { name: "Super Mario Bros", url: "https://downloads.retrostic.com/play.php?console_slug=nes&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%20Bros%20%28E%29.zip" },
+            { name: "Entertopia", url: "https://html.cafe/x92c3d890" },
+            { name: "Fake Hacking Prank", url: "https://geektyper.com/" },
+            { name: "Classroom Games", url: "https://dnrweqffuwjtx.cloudfront.net/" },
+            { name: "Distributions Game", url: "https://d10o6em2qtnr4q.cloudfront.net/assets/ca72aa6abe504291b749002226ef9094/index.html" },
+            { name: "HTML.cafe", url: "https://html.cafe/" },
+            { name: "Sonic CD", url: "https://tws2401.github.io/Sonic-CD-WASM/" },
+            { name: "Sonic 4: Episode 1", url: "https://wamwoowam.co.uk/sonic4/" }, 
+            { name: "WebVM", url: "https://webvm.io/" },  
+            { name: "Rammerhead Link Generator", url: "https://s-pscripts.github.io/rh-fork/" },   
+            { name: "Evoworld.io", url: "https://evoworld.io/" },
+            { name: "Links123 (CW Edit)", url: "https://ricardomariosonic123.github.io/Links123-V3" },
+            { name: "Block Blast", url: "https://blockblastonline.com" },
+            { name: "Masked Forces Unlimited", url: "https://maskedforcesunlimited.github.io/" },
+            { name: "Bad Time Simulator", url: "https://badtimesimulator.io" },    
+            { name: "I Beat Kids", url: "https://ibeatkids.com" }, 
 
       
 
@@ -845,7 +1023,7 @@
 
         // Add "Request a game" button
         var requestButton = document.createElement("button");
-        requestButton.textContent = "Request a game/Report A Bug";
+        requestButton.textContent = "Request a game/feature/Report A Bug";
         requestButton.className = "button";
         requestButton.style.position = "absolute";
         requestButton.style.top = (lowestButtonPosition + 90) + "px"; // Position 90px below the lowest button
@@ -863,6 +1041,8 @@ document.getElementById("launchApps").onclick = function() {
     document.body.innerHTML = "";
     setTimeout(function() {
         var apps = [
+            { name: "HTML.cafe Editor & Gallery", url: "https://html.cafe/" },   
+            { name: "Visual Studio Code", url: "https://html.cafe/x3e7b1ae9" }, 
             { name: "Search Blocked Github repositories (Credits to Dinguschan-owo on Github)", url: "https://github-repository-search-two.vercel.app/" },
             { name: "DingusTerminal (Credits to Dinguschan-owo on Github)", url: "https://dingus-terminal.vercel.app/" },
             { name: "Dinguschan's Blocking Extension Checker", url: "https://installed-blocking-extension-checker.vercel.app/" },
@@ -878,10 +1058,15 @@ document.getElementById("launchApps").onclick = function() {
             { name: "Gauth Math Helper", url: "https://gauthmath.com" },
             { name: "ChatGPT With Sources (signup needed)", url: "https://popai.pro/" },
             { name: "Calculator", url: "https://desmos.com/scientific" },
-            { name: "AI Images", url: "https://nuelink.com/tools/ai-image-generator" },
+            { name: "Windows 10 Emulator", url: "https://dustinbrett.com/" },
+            { name: "AaronOS", url: "https://aaronos.dev/" },
+            { name: "Windows 96", url: "https://windows96.net/" },
+            { name: "Real Windows 11 in browser", url: "https://app.apponfly.com/trial" },
+            { name: "AI Image Generator", url: "https://nuelink.com/tools/ai-image-generator" },
             { name: "Global Image URL Generator", url: "https://html.cafe/x2a36ad24"},
             { name: "ChatGPT Alt", url: "https://talkai.info/" },
             { name: "YT to mp3", url: "https://ezmp3.cc" },
+            { name: "PlayCode.io", url: "https://playcode.io" },
             { name: "YT to MP3 2 (Cobalt.tools)", url: "https://cobalt.tools" },
             { name: "HTML Editor and Downloader", url: "https://html.cafe/x978c906e" },
             { name: "Screen Recorder", url: "https://html.cafe/xf7a71dd8" },
@@ -891,7 +1076,7 @@ document.getElementById("launchApps").onclick = function() {
             { name: "Notepad in JS", url: "https://notepad.js.org/index.html" },
             { name: "Proxy Link Creator", url: "https://censordodge.com" },
             { name: "Make a proxy link with Koyeb", url: "https://html.cafe/x7836dbf6" },
-            { name: "Bypass Ad Links", url: "https://bypass.city" },
+            { name: "Bypass Ad Links (Lootdest)", url: "https://bypass.city" },
             { name: "Message Encoder/Decoder (Credits to Dinguschan-owo on Github)", url: "https://encoder-decoder-nine.vercel.app/" },
             { name: "EmulatorJS", url: "https://demo.emulatorjs.org/" },
             { name: "Syntaxmeets", url: "https://syntaxmeets.vercel.app/" },
@@ -926,6 +1111,46 @@ document.getElementById("launchApps").onclick = function() {
         });
     }, 1000);
 };
+
+document.getElementById("LaunchProxy").onclick = function() {
+    document.body.innerHTML = "";
+    setTimeout(function() {
+        var proxy = [
+            { name: "ByeBlocker Proxy Browser", url: "https://html.cafe/xfe3a414c" },
+            { name: "Helios Proxy Browser (Credits to dinguschan-owo on Github)", url: "https://helios-browser.vercel.app" },
+            { name: "Dingus Proxy Browser (Credits to dinguschan-owo on Github)", url: "https://dinguschan-owo.github.io/dingusproxy/" },
+            { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
+            { name: "BlockAway", url: "https://cdn.blockaway.net/" },
+            { name: "JMW Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
+            // { name: "test", url: "" },
+        ];
+
+        var container = document.createElement("div");
+        container.setAttribute("id", "proxyContainer");
+        document.body.appendChild(container);
+
+        proxy.forEach(function(proxy) {
+            var button = document.createElement("button");
+            button.textContent = proxy.name;
+            button.className = "button";
+            button.onclick = function() {
+                if (proxy.url) {
+                    document.body.innerHTML = '';
+                    var messageText = document.createElement("p");
+                    messageText.textContent = proxy.message;
+                    messageText.style.color = "#fff";
+                    messageText.style.marginTop = "20px";
+                    document.body.appendChild(messageText);
+                    document.body.innerHTML = '<object id="proxyFrame" type="text/html" data="' + proxy.url + '" style="width: 100%; height: 100vh;"></object>';
+                } else if (proxy.action) {
+                    proxy.action();
+                }
+            };
+            container.appendChild(button);
+        });
+    }, 1000);
+};
+
 // main menu button functions go here! :D
     document.getElementById("openInAboutBlank").onclick = function() {
       var newTab = window.open('about:blank', '_blank');
@@ -945,9 +1170,7 @@ document.getElementById("launchApps").onclick = function() {
     document.body.innerHTML = '<object id="ruffleFrame" type="text/html" data="https://ruffle.rs/demo/" style="width: 100%; height: 100vh;"></object>';
   };
 
-document.getElementById("launchBrowser").onclick = function() {
-  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x6c8433a0" style="width: 100%; height: 100vh;"></object>';
-};
+
 
 document.getElementById("launchUltraviolet").onclick = function() {
   document.body.innerHTML = '<object id="UltravioletFrame" type="text/html" data="https://dfs3rzq44v6as.cloudfront.net/#/prxy" style="width: 100%; height: 100vh;"></object>';
@@ -962,8 +1185,17 @@ document.getElementById("exploits").onclick = function() {
     document.getElementById("links").onclick = function() {
   document.body.innerHTML = '<object id="linksFrame" type="text/html" data="https://html.cafe/x1a39d9e5" style="width: 100%; height: 100vh;"></object>';
 };
+document.getElementById("chat").onclick = function() {
+  document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/xc79bd761" style="width: 100%; height: 100vh;"></object>';
+};
+document.getElementById("roblox-ts").onclick = function() {
+  document.body.innerHTML = '<object id="robloxFrame" type="text/html" data="https://html.cafe/x49c5b5b6" style="width: 100%; height: 100vh;"></object>';
+};
 
 // Button scripts no longer in use
+// document.getElementById("launchBrowser").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x6c8433a0" style="width: 100%; height: 100vh;"></object>';
+// };
 // document.getElementById("ai").onclick = function() {
 //   document.body.innerHTML = '<object id="aiFrame" type="text/html" data="https://html.cafe/x2029431d" style="width: 100%; height: 100vh;"></object>';
 // };
@@ -980,6 +1212,6 @@ document.getElementById("exploits").onclick = function() {
 //   document.body.innerHTML = '<object id="changelogFrame" type="text/html" data="https://html.cafe/x0ccfcfe7" style="width: 100%; height: 100vh;"></object>';
 // };
 
-    </script>
-  </body>
-</html>
+    </script> <!--javascript goes byebye-->
+  </body> <!--body goes byebye-->
+</html> <!--html goes byebye-->
