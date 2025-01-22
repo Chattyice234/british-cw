@@ -61,23 +61,23 @@ h4 {
     font-family: 'Varela Round';
 }
 
-h4:hover {
+/* h4:hover {
     cursor: default;
-    text-shadow: 0 0 5px #000; /* Add text shadow effect */
-    -webkit-animation: glow 1s; /* Add animation effect */
+    text-shadow: 0 0 5px #000; 
+    -webkit-animation: glow 1s; 
     animation: glow 1s;
-}
+} */
 
 h3 {
     font-family: 'Varela Round';
 }
 
-h3:hover {
+/* h3:hover {
     cursor: default;
-    text-shadow: 0 0 5px #000; /* Add text shadow effect */
-    -webkit-animation: glow 1s; /* Add animation effect */
+    text-shadow: 0 0 5px #000; 
+    -webkit-animation: glow 1s; 
     animation: glow 1s;
-}
+} */
 
 h2 {
     font-family: 'Varela Round';
@@ -87,21 +87,21 @@ h2 {
     text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 
-h2:hover {
+/* h2:hover {
     cursor: default;
-    background-color: #fff; /* Set background-color to white */
-    text-shadow: 0 0 5px #000; /* Add text shadow effect */
-    -webkit-animation: glow 1s; /* Add animation effect */
+    background-color: #fff; 
+    text-shadow: 0 0 5px #000; 
+    -webkit-animation: glow 1s; 
     animation: glow 1s;
-}
+} */
 
-h1:hover {
+/* h1:hover {
     cursor: default;
-    background-color: #fff; /* Set background-color to white */
-    text-shadow: 0 0 5px #000; /* Add text shadow effect */
-    -webkit-animation: glow 1s; /* Add animation effect */
+    background-color: #fff; 
+    text-shadow: 0 0 5px #000; 
+    -webkit-animation: glow 1s; 
     animation: glow 1s;
-}
+} */
 
 @keyframes glow {
 0% {
@@ -193,6 +193,16 @@ h1:hover {
     /* Smooth transition for the glow effect */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     /* Initial shadow effect */
+}
+
+/* Enhanced hover effect with more intense glow */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    text-shadow: 0 0 10px rgba(52, 152, 219, 1), 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(52, 152, 219, 0.6), 0 0 40px rgba(52, 152, 219, 0.4);
+}
+/* Scripts for the default headers before hover */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela Round', sans-serif;
+    transition: text-shadow 0.3s ease;
 }
 
 .button-links {
@@ -496,7 +506,8 @@ h1:hover {
   });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        
+document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
       "Chatty changed these lol",
       "helo",
@@ -510,18 +521,50 @@ h1:hover {
       "kyse is stealing my aura with sigmafart >:( https://html.cafe/x4922b615",
       "Everyone's a rizzed up crank",
       "If you get this message, you are fat",
+      "Warning 1: VDM. Warning 2: RDM. Warning 3: Freakiness. Kick 1. Join back after 10 minutes.",
+      "I g",
       "If you get this message, you're black",
+      "Youtube thumbnails: Gemini, has a dog ever played in the NBA? 'Yes' My search results: 'No, the NBA is for humans.'",
       "bye schoolwide talking",
+      "Guys i just beat Pandemonium practice on hard difficulty thrice (i bet you didnt know that was a word >:)) 😎😎😎😎😎😎😎",
+      "yazoot553",
+      "Sebastian",
+      "No strings attached~",
+      "Free of charge!",
+      "*holds in laughter*",
+      "Nvm tiktok remembered how to exist",
+      "Guys look Chattyice stopped the web scrapers!",
+      "You ever get the feeling something bad is going to happen? Well, you'd be right!",
+      "p.AI.nter",
+      "*earrape: THANK YOU FOR USING OUR IMAGINARY FRIEND TOY REMOTE. ENJOY YOUR NEXT 2 DAYS WITH YOUR REAL, NOT-SO-IMAGINARY FRIEND!*",
+      "bro why'd he grab it like that 💀",
+      "n*****. n***** n***** n***** n***** - *steak pauses* actually i think i know why tiktok is getting banned",
       "bye chattywebsite",
       "HELIOS BROWSER IS FIREEEEEEE 🔥",
       "W UPDATES TO HELIOS DINGUSCHAN!",
       "dinguschan you dropped this → 👑",
+      "Wheres the bedroom? 🍇",
+      "",
       "sponsored by ducks",
       "nahhh barney, I stole like 10 splashes from you and you stole all of mine (stay mad >:D)",
+      // hmmm you thought me stealing messages from you was an excuse for stealing 50x more messages than I did? >:D
       "2020 was 5 years ago",
+      "AI Slop",
+      "Angry birds theme- earrape",
+      "i found british man on github github.com/1Britishgeeza",
       "i havent showered since last year",
       "boys bathroom is worse than you (the floors are sticky as hell)",
       "skribbl.io >>>>> sketchful.io",
+      "Of course the site is freaky",
+      "WORSEY HACKSON AND THE REPORTIANS (ROBLOXIANS TOO MAYBE). ONE: I HAVE NO FATHER FIGURE",
+      "How can you unblock brawl stars and roblox? Easy! Just go on amazon.com, search 'Laptop', and buy one!",
+      "btw if the lights flicker twice, that means its blitz",
+      "bro i got a candlebearer + squiddles + eyefestation + locked door combo in pressure",
+      "Tyrone Roblox Mukbang 2",
+      "I have 700 losses and 200 wins in ArchMC bedwars 😎😐",
+      "some random 5 year old girl on roblox came up to me and said 'daddy' i spammed alt f4",
+      "Teacher is camping on goguardian with cheeto dust on their fingers",
+      "",
       "joe biden torpedo",
       "biden boat",
       "trump torpedo",
@@ -830,7 +873,6 @@ h1:hover {
       var games = [
           { name: "Skribbl.io", url: "https://skribbl.io" }, // fire game
           { name: "Android App Launcher", url: "https://nowgg.lol/apps/frogiee1/69420/custom-thingy-loader.html" },
-          { name: "Barney's Website", url: "https://html.cafe/x715d6947" },
           { name: "Minecraft (1.5)", url: "https://eaglercraft.glitch.me/" },
           { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
           { name: "Eaglercraft Server List", url: "https://servers.eaglercraft.com/" },
@@ -1077,8 +1119,7 @@ h1:hover {
           { name: "MacOS Emulator", url: "https://www.pulsecodes.cc/mac-os" },
           { name: "Ubuntu Emulator", url: "https://www.pulsecodes.cc/ubuntu-simulator" },
           { name: "Minesweeper", url: "https://minesweeper.online/" },
-          //   { name: "test", url: "" },
-
+          { name: "WordFalcon", url: " https://wordfalcon.com" },
     
 
       ];
@@ -1213,7 +1254,8 @@ document.getElementById("LaunchProxy").onclick = function() {
           { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
           { name: "BlockAway", url: "https://cdn.blockaway.net/" },
           { name: "JMW Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
-          // { name: "test", url: "" },
+          { name: "CORS Proxy", url: "https://cors.lol/" },
+          //   { name: "test", url: "" },
       ];
 
       var container = document.createElement("div");
