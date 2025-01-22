@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
       "Chatty changed these lol",
@@ -364,7 +365,6 @@ document.addEventListener("DOMContentLoaded", function() {
       var games = [
           { name: "Skribbl.io", url: "https://skribbl.io" }, // fire game
           { name: "Android App Launcher", url: "https://nowgg.lol/apps/frogiee1/69420/custom-thingy-loader.html" },
-          { name: "Barney's Website", url: "https://html.cafe/x715d6947" },
           { name: "Minecraft (1.5)", url: "https://eaglercraft.glitch.me/" },
           { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
           { name: "Eaglercraft Server List", url: "https://servers.eaglercraft.com/" },
@@ -611,8 +611,7 @@ document.addEventListener("DOMContentLoaded", function() {
           { name: "MacOS Emulator", url: "https://www.pulsecodes.cc/mac-os" },
           { name: "Ubuntu Emulator", url: "https://www.pulsecodes.cc/ubuntu-simulator" },
           { name: "Minesweeper", url: "https://minesweeper.online/" },
-          { name: "test", url: "https://coder.com/" },
-
+          { name: "WordFalcon", url: " https://wordfalcon.com" },
     
 
       ];
@@ -747,7 +746,8 @@ document.getElementById("LaunchProxy").onclick = function() {
           { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
           { name: "BlockAway", url: "https://cdn.blockaway.net/" },
           { name: "JMW Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
-          // { name: "test", url: "" },
+          { name: "CORS Proxy", url: "https://cors.lol/" },
+          //   { name: "test", url: "" },
       ];
 
       var container = document.createElement("div");
