@@ -182,7 +182,7 @@ h2 {
 }
 
 /* Enhanced hover effect with more intense glow */
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, #blocksMessage:Hover {
     text-shadow: 0 0 10px rgba(52, 152, 219, 1), 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(52, 152, 219, 0.6), 0 0 40px rgba(52, 152, 219, 0.4);
 }
 /* Scripts for the default headers before hover */
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     /* More intense glow effect */
 }
 
-.button-credits { /* TS means troubleshoot */
+.button-credits {
     bottom: 0%; 
     left: 0%;
     width: 150px;
@@ -355,12 +355,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-#blocksMessage:Hover {
-    text-shadow: 0 0 5px #000; /* Add text shadow effect */
-    -webkit-animation: glow 1s; /* Add animation effect */
-    animation: glow 1s;
+    transition: text-shadow 0.3s ease;
 }
 
 #movingText {
