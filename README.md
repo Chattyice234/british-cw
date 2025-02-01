@@ -1,2 +1,2 @@
 # ChattyWebsite
-Reupload of the old BCW repo because the old acc was marked as spam. 
+This has been deleted because I was caught. Do your schoolwork, games are for after school on a personal device.
