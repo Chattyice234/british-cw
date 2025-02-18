@@ -1,2 +1,3 @@
 # ChattyWebsite
-This has been deleted because I was caught. Do your schoolwork, games are for after school on a personal device.
+I created a new link for this, do not associate it with me anymore. This link will probably not update.
+https://html-13258642.codehs.me/index.html
