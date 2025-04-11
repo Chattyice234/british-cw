@@ -11,6 +11,42 @@
             min-height: 100vh;
             text-align: center;
         }
+        
+        #settings {
+             overflow: auto;
+             position: absolute;
+        	 left: 50%;
+        	 top: 50%;
+        	 transform: translate(-50%, -50%);
+             background-color: #111111;
+             height: 70%;
+             width: 70%;
+             border-radius: 10px;
+         }
+         
+         .settings-i {
+             margin-right: 5px;
+             font-family: Varela Round, Arial, sans-serif;
+             font-size: 15px;
+        	 width: 60%;
+             height: 40px;
+        	 border-radius: 6px;
+             border: 0;
+             font-weight: bold;
+             text-align: center;
+             background-color: #1a2023;
+             color: #fff;
+             transition: transform 0.2s;
+         }    
+     
+     .settings-i:hover {
+     outline: solid 2.5px #005;
+     }
+     
+     .settings-i:focus { 
+     outline: solid 2.5px #4196e1; 
+     }
+     
         body {
             margin: 0;
             padding: 0;
@@ -81,6 +117,11 @@
 
         h3 {
             font-family: 'Varela Round';
+        }
+        
+        h7 {
+            font-family: 'Varela Round';
+            font-size: 50px;
         }
 
         h2 {
@@ -172,34 +213,8 @@
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
             /* Initial shadow effect */
         }
-
-        .button-ab {
-            bottom:0%; /* Position the button to the bottom left | Credits to Stack Overflow users on this thread https://stackoverflow.com/questions/63541670/how-to-position-a-button-on-website-using-html-css*/
-            left:0%;
-            width:200px;
-            height:40px;
-            position: absolute;
-            z-index: 2; 
-            display: inline-block;
-            margin-top: 10px;
-            margin-left: 2px;
-            margin-right: 2px;
-            padding: 10px 20px;
-            background-color: #00008B;
-            color: #00FFFF;
-            border: 2px solid #00ff;
-            border-radius: 12px; /* Create rounded edges */
-            font-weight: 700;
-            font-family: Raleway;
-            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
-            cursor: pointer;
-            transition: all 0.3s ease;
-            /* Smooth transition for the glow effect */
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-            /* Initial shadow effect */
-        }
-
-        .button-tc { 
+        
+        #button-s { 
             bottom: 0%; 
             right: 0%;
             width: 150px;
@@ -224,8 +239,103 @@
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
             /* Initial shadow effect */
         }
-
-        .button-tc:hover {
+        
+        .button-c {
+         position: absolute;
+         top: 0%;
+         right: 0%;
+         padding: 5px 10px;
+         font-size: 18px;
+         font-weight: 552;
+         font-family: Tahoma, sans-serif;
+         background-color: #00008b;
+         color: #fff;
+         border: none;
+         border-radius: 10px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         }
+        
+        .favicon {
+             padding: 0px 0px;
+             margin: 5px;
+             border: none;
+             cursor: pointer;
+             display: inline-flex;
+             align-items: center;
+             background-color: #000; 
+             border-radius: 10px;
+             outline: none;
+         }
+    
+     .favicon img {
+         width: 30px;
+         height: 30px;
+         outline: none;
+         background-color: #fff;
+         padding: 7px 8px;
+         border-radius: 10px;  
+         transition: background-color 0.3s, transform 0.3s;
+     }
+    
+     .favicon img:hover {
+         background-color: #cccccc;
+         transform: scale(1.05);
+     }
+    
+     .favicon img:active {
+         background-color: #999999;
+         transform: scale(0.95);
+     }
+     
+     .button-c:hover {
+         background-color: #4196e1;
+     }
+    
+     .button-c:active {
+         background-color: #23278d;
+     }
+    
+        
+        .button-st {
+             margin-left: 5px;
+             margin-right: 5px;
+             margin-bottom: 10px;
+             font-size: 15px;
+             font-weight: bold;
+             font-family: Raleway, sans-serif;
+             background-color: #00008B;
+             color: #00FFFF;
+             border: 2px solid #00ff;
+             border-radius: 12px;
+             cursor: pointer;
+             width: 24.7%;
+             height: 40px;
+             margin-top: 20px;
+             transition: 0.3s all ease;
+             box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+        
+        .button-sc {
+             margin-left: 5px;
+             margin-right: 5px;
+             margin-bottom: 10px;
+             font-size: 15px;
+             font-weight: bold;
+             font-family: Raleway, sans-serif;
+             background-color: #00008B;
+             color: #00FFFF;
+             border: 2px solid #00ff;
+             border-radius: 12px;
+             cursor: pointer;
+             width: 15%;
+             height: 40px;
+             margin-top: 20px;
+             transition: 0.3s all ease;
+             box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+     
+     .button-st:hover {
             background-color: #4169E1;
             color: #00FFFF;
             box-shadow: 0 0 15px rgb(17, 27, 215),
@@ -234,7 +344,22 @@
             /* More intense glow effect */
         }
         
-        .button-tc:active {
+        .button-st:active {
+            background-color: #23278d;
+            color: #549ea0;
+            border: 2px solid #121c7b;
+        }
+        
+        .button-sc:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+        }
+        
+        .button-sc:active {
             background-color: #23278d;
             color: #549ea0;
             border: 2px solid #121c7b;
@@ -249,13 +374,7 @@
             /* More intense glow effect */
         }
         
-        .button:active {
-            background-color: #23278d;
-            color: #549ea0;
-            border: 2px solid #121c7b;
-        }
-
-        .button-ab:hover {
+        #button-s:hover {
             background-color: #4169E1;
             color: #00FFFF;
             box-shadow: 0 0 15px rgb(17, 27, 215),
@@ -264,7 +383,13 @@
             /* More intense glow effect */
         }
         
-        .button-ab:active {
+        #button-s:active {
+            background-color: #23278d;
+            color: #549ea0;
+            border: 2px solid #121c7b;
+        }
+        
+        .button:active {
             background-color: #23278d;
             color: #549ea0;
             border: 2px solid #121c7b;
