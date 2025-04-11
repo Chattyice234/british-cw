@@ -1,3 +1,138 @@
+// Open Settings
+     function openSettings() {
+     document.getElementById("settings").style.display = "block";
+     }
+      
+     // Close Settings
+     function closeSettings() {
+     document.getElementById("settings").style.display = "none";
+     }
+     
+     // Save tab name to localStorage
+     function changeTabName() {
+     var tabName = document.getElementById("tabName").value;
+     document.title = tabName;
+     localStorage.setItem("tabName", tabName);
+     }
+
+     // Save tab icon to localStorage
+     function changeTabIcon() {
+     var tabIcon = document.getElementById("tabIcon").value;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabIcon", tabIcon);
+     }
+     
+     // Change tab favicon
+     function changeTabFavicon(iconUrl) {
+     var link = document.querySelector("link[rel~='icon']");
+     if (!link) {
+     link = document.createElement('link');
+     link.rel = 'icon';
+     document.getElementsByTagName('head')[0].appendChild(link);
+     }
+     link.href = iconUrl;
+     localStorage.setItem("tabIcon", iconUrl);
+     }
+
+     // Load tab name and icon from localStorage
+     window.onload = function() {
+     var savedTabName = localStorage.getItem("tabName");
+     var savedTabIcon = localStorage.getItem("tabIcon");
+     if (savedTabName) {
+     document.title = savedTabName;
+     }
+     if (savedTabIcon) {
+     changeTabFavicon(savedTabIcon);
+        }
+     }
+     
+document.getElementById("Google").onclick = function() {
+     var tabTitle = "Google";
+     var tabIcon = "https://www.google.com/favicon.ico";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+                            
+     document.getElementById("Google Drive").onclick = function() {
+     var tabTitle = "My Drive - Google Drive";
+     var tabIcon = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+     
+     document.getElementById("Google Docs").onclick = function() {
+     var tabTitle = "Untitled document - Google Docs";
+     var tabIcon = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x64.png";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+      
+     document.getElementById("Google Slides").onclick = function() {
+     var tabTitle = "Untitled presentation - Google Slides";
+     var tabIcon = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x64.png";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+     
+     document.getElementById("Google Classroom").onclick = function() {
+     var tabTitle = "Home";
+     var tabIcon = "https://ssl.gstatic.com/classroom/favicon.png";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+                              
+     document.getElementById("Gmail").onclick = function() {
+     var tabTitle = "Inbox (2103)";
+     var tabIcon = "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+     
+     document.getElementById("ChattyWebsite").onclick = function() {
+     var tabTitle = "ChattyWebsite";
+     var tabIcon = "https://i.imgur.com/6tew1Fq.png";
+     document.title = tabTitle;
+     changeTabFavicon(tabIcon);
+     localStorage.setItem("tabName", tabTitle);
+     localStorage.setItem("tabIcon", tabIcon);
+     };
+     
+     // Open in about:blank
+     document.getElementById("aboutBlank").onclick = function() {
+     var win = window.open('');
+     win.document.open();
+     win.document.write(document.documentElement.outerHTML);
+     win.document.title = "about:blank";
+     win.document.close();
+     window.parent.window.location.replace('https://classroom.google.com/')
+     };
+     
+     // Open in blob:
+     function createBlobUrl() {
+     var outerHTML = document.documentElement.outerHTML;
+     var blob = new Blob([outerHTML], {
+     type: 'text/html'
+     });
+     var blobUrl = URL.createObjectURL(blob);
+     var newTab = window.open();
+     newTab.document.write('<!DOCTYPE html><html><head><title>Page Content</title></head><body></body></html>');
+     newTab.document.close();
+     newTab.location.href = blobUrl;
+     }
+
+
 document.addEventListener("DOMContentLoaded", function() {
       var phrases = [
         "Chatty changed these lol",
@@ -134,6 +269,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "bomb instructions - Google Search",
         "if you search worst song on youtube thick of it comes up as the first result",
         "paint me green and call me a pickle",
+        "Am I suspicious?",
+        "Best way to hide a body - Google Search",
         "look it's a chrome://kill!",
         "Look mom, I'm [ REDACTED ]",
         "npm install teacher-destroying-tutorial.exe",
@@ -257,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
     document.getElementById("launchGames").onclick = function() {
-      document.body.innerHTML = "<h3>Loading...<h3>";
+      document.body.innerHTML = "<h7>Loading...<h7>";
       setTimeout(function() {
         document.body.innerHTML = "";
         document.body.innerHTML = "<input id='searchbar' onkeyup='search_button()' type='text' name='search' placeholder='Search Games 🔍'>"; 
@@ -496,7 +633,7 @@ document.addEventListener("DOMContentLoaded", function() {
             button.className = "button";
             button.onclick = function() {
                 // Hide all buttons
-                document.querySelectorAll('.button', '#searchbar', 'search_button()').forEach(function(element) {
+                document.querySelectorAll('.button').forEach(function(element) {
                     element.style.display = "none";
                 });
 
@@ -531,7 +668,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.getElementById("launchApps").onclick = function() {
-    document.body.innerHTML = "<h3>Loading...<h3>";
+    document.body.innerHTML = "<h7>Loading...<h7>";
     setTimeout(function() {
         document.body.innerHTML = "";
         document.body.innerHTML = "<input id='searchbar' onkeyup='search_button()' type='text' name='search' placeholder='Search Apps 🔍'>";
@@ -594,20 +731,6 @@ document.getElementById("launchApps").onclick = function() {
 };
 
 // main menu button functions go here
-
-    document.getElementById("openInAboutBlank").onclick = function() {
-var win = window.open('');
-win.document.open();
-win.document.write(document.documentElement.outerHTML);
-win.document.title = "about:blank";
-win.document.close();
-window.parent.window.location.replace(localStorage.getItem('panicurl') || 'https://classroom.google.com/h')
-};
-
-document.getElementById("tabcloak").onclick = function() {
-      document.title = "Home";
-      document.querySelector('link[rel="icon"]').href = "https://ssl.gstatic.com/classroom/favicon.png";
-};
 
 document.getElementById("chat").onclick = function() {
   document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://chattyice234.github.io/online-chatroom" style="width: 100%; height: 100vh;"></object>';
