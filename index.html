@@ -16,7 +16,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <h1>~*{ 🌆 ChattyWebsite 🌆 }*~</h1>
-    <h4 style="color:blue; background-color:black">Update Log: Fixed some of them bugs</h4>
+    <h4 style="color:blue; background-color:black">Update Log: Added settings and fixed a few bugs</h4>
     
     
     <!-- Buttons -->
@@ -35,25 +35,60 @@
             <ion-icon name="chatbox-ellipses-outline"></ion-icon>
         </span>
     </button>
-    <button id="openInAboutBlank" class="button-ab">About:blank Cloak
-        <span class="button__icon">
-            <ion-icon name="open-outline"></ion-icon>
-        </span>
-    </button>
-    <button id="tabcloak" class="button-tc">Tab Cloak
-        <span class="button__icon">
-            <ion-icon name="tablet-landscape-outline"></ion-icon>
-        </span>
-    </button>
+     <button id="button-s" onclick="openSettings()">Settings
+         <span class="button__icon">
+             <ion-icon name="settings-outline"></ion-icon>
+         </span>
+     </button>
     <h2>ChattyWebsite Announcements
         <span class="button__icon">
             <ion-icon name="megaphone-outline"></ion-icon>
         </span>
     </h2>
-    <h4>Continuing this site!</h4>
+    <h4>ChattyWebsite is back! Also try Barney's Website: https://barneys-website-13650822.codehs.me/</h4>
     <br>
     <div id="randomPhrase"></div>
     </div>
+    
+    
+    <!-- Settings -->
+     <div id="settings" style="display: none">
+     <h3 style="font-size: 50px; font-family: Varela Round, Arial, sans-serif; margin: 0; margin-top: 10px; cursor: default;">Settings
+         <span class="button__icon">
+             <ion-icon name="settings-outline"></ion-icon>
+         </span>
+     </h3>
+     <button class="button-c" onclick="closeSettings()" title="Close Settings">×</button>
+     <button class="button-st" id="aboutBlank" title="Open in about:blank">about:blank
+         <span class="button__icon">
+             <ion-icon name="arrow-redo-outline"></ion-icon>
+         </span>
+     </button>
+     <br>
+     <input type="text" id="tabName" placeholder="Enter new tab name" class="settings-i">
+     <button class="button-sc" onclick="changeTabName()" title="Save changes">Save
+         <span class="button__icon">
+             <ion-icon name="checkmark-circle-outline"></ion-icon>
+         </span>
+     </button>
+     <br>
+     <input type="text" id="tabIcon" placeholder="Enter new tab icon" class="settings-i">     
+     <button class="button-sc" onclick="changeTabIcon()" title="Save changes">Save
+         <span class="button__icon">
+             <ion-icon name="checkmark-circle-outline"></ion-icon>
+         </span>
+     </button>
+     <br>
+     <br>
+     <button id="ChattyWebsite" class="favicon"><img src="https://i.imgur.com/6tew1Fq.png" alt="ChattyWebsite" title="ChattyWebsite"></button>
+     <button id="Google" class="favicon"><img src="https://www.google.com/favicon.ico" alt="Google" title="Google"></button>
+     <button id="Google Drive" class="favicon"><img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" alt="Google Drive" title="Google Drive"></button>
+     <button id="Google Docs" class="favicon"><img src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x64.png" alt="" title=""></button>
+     <button id="Google Slides" class="favicon"><img src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x64.png" alt="" title=""></button>
+     <button id="Google Classroom" class="favicon"><img src="https://cdn.worldvectorlogo.com/logos/google-classroom.svg" alt="Google Classroom" title="Google Classroom"></button>
+     <button id="Gmail" class="favicon"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" title="Gmail"></button>
+     </div>
+     </div>
     <script src="scripts.js"></script>
   </body>
 </html>
