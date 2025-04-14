@@ -219,6 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "-_-",
         ":0",
         "click on this message NOW!",
+        "For a price, of course...",
         "ERROR - SRC=TROJAN_VIRUS.EXE_RUNFILE NOT FOUND",
         "111111111111111111111",
         "it's super sigma, greg",
@@ -239,6 +240,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "my homework ate my dog",
         "snow day seems fun",
         "brainrot is bad",
+        "people are getting freaky in the chatroom, im talking to you I-Tickle-Fat-Kids",
         "ok but could you make this load faster than the average coke addict",
         "my former bug report form's first response: What is the bug? - 'wussup lil spoon can you fix friday night funkin please vro or imma jump yo all diddy' those were the exact words",
         "C H A I R",
@@ -347,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "A good captian goes down with his ship.",
         "Chromebooks DOWN!",
         "Computers DOWN!",
+        "the virtual machine in apps is great, you can even watch youtube 👍",
         "Aye twin stop allat smiling. It's Sunday and you got school tomorrow. And don't forget to turn them assignments in and charge that chromebook up",
         "Who's in 2027? 👇",
         "The Mr. B lore runs so deep",
@@ -401,6 +404,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.innerHTML = "<input id='searchbar' onkeyup='search_button()' type='text' name='search' placeholder='Search Games 🔍'>"; 
         var games = [
             { name: "Pandemonium Minigame", url: "https://redtide-stack.github.io/Pandemonium-Minigame-fork/" },
+            { name: "Block Fist Games", url: "https://blockfistgames2.weebly.com/" },
+            { name: "Eaglercraft 1.12 (REAL)", url: "https://eaglercraft.com/mc/1.12.2-wasm/" },
             { name: "EaglyMC (Minecraft)", url: "https://eaglymc.com/" },
             { name: "Minecraft (1.5)", url: "https://sd592g.github.io/zj684od4lfg/" },
             { name: "Minecraft (1.8)", url: "https://eaglercraft-archive.github.io/Koneclient-1.8-web/" },
@@ -639,14 +644,19 @@ document.getElementById("launchApps").onclick = function() {
         document.body.innerHTML = "";
         document.body.innerHTML = "<input id='searchbar' onkeyup='search_button()' type='text' name='search' placeholder='Search Apps 🔍'>";
         var apps = [
+            { name: "Windows 10 Virtual Machine", url: "https://chattyice234.github.io/ChattyVM/" },
+            { name: "Virtual Machine (3 min. Free Trial)", url: "https://www.browserling.com/virtual-browser" },
+            { name: "Virtual Machines", url: "https://copy.sh/v86/" },
+            { name: "I Tickle Fat Kids", url: "https://chattyice234.github.io/itfk/" },
             { name: "Dinguschan's Github Search", url: "https://github-repository-search-two.vercel.app/" },
+            { name: "test", url: "https://majinemuinoyone.easterndns.com/search/" },
             { name: "DingusProxy", url: "https://dinguschan-owo.github.io/dingusproxy" },
             { name: "Helios Browser", url: "https://helios-browser.vercel.app" },
             { name: "ByeBlocker", url: "https://chic-kashata-e4cec3.netlify.app/" },
             { name: "Blobwifi", url: "https://blobby-boi.github.io/Blobwifi/" },
             { name: "Interstellar", url: "https://menu.earlyriserscoffeeshop.com/" },
             { name: "Dinguschan's Blocking Extension Checker", url: "https://installed-blocking-extension-checker.vercel.app/" },
-            { name: "ChatGPT", url: "https://dfs3rzq44v6as.cloudfront.net/apps/27ca35c4-2604-4054-b790-b9436b00d06b/?usr-img=../../assets/img/user.webp" },
+            { name: "ChatGPT", url: "https://chatgptfree.ai/chat/" },
             { name: "DeepAI", url: "https://deepai.org/" },
             { name: "Appetize.io Android Phone", url: "https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=false&debug=true&device=pixel4&embed=true&launchUrl=exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.46.0.0-ghV0%21Qgb8N&scale=65&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B&osVersion=11.0&deviceColor=black" },
             { name: "Website Source Code Viewer", url: "https://codebeautify.org/source-code-viewer" },
@@ -654,11 +664,11 @@ document.getElementById("launchApps").onclick = function() {
             { name: "Ubuntu Emulator", url: "https://www.pulsecodes.cc/ubuntu-simulator" },
             { name: "List of Exploits", url: "https://cocalc.com/github/3kh0/ext-remover/blob/main/README.md" },
              { name: "History Flooder", url: "https://spritzerland.github.io/chbook/" },
-            { name: "Virtual Machine (3 min. Free Trial)", url: "https://www.browserling.com/virtual-browser" },
-            { name: "Virtual Machines", url: "https://copy.sh/v86/" },
             { name: "Gauth Math Helper", url: "https://gauthmath.com" },
             { name: "PopAI", url: "https://popai.pro/" },
             { name: "Calculator", url: "https://desmos.com/scientific" },
+            { name: "SmoresXO School Tools", url: "https://smoresxo.shop/" },
+            { name: "SmoresXO Proxies", url: "https://smoresxo.shop/proxies" },
             { name: "HTML Editor", url: "https://spacenerd24.github.io/Online-HTML-Viewer/" },
             { name: "Windows 10", url: "https://dustinbrett.com/" },
             { name: "Windows 11 in React", url: "https://win11.blueedge.me" },
@@ -667,7 +677,6 @@ document.getElementById("launchApps").onclick = function() {
             { name: "AaronOS", url: "https://aaronos.dev/" },
             { name: "Windows 96", url: "https://windows96.net/" },
             { name: "AI Image Generator", url: "https://nuelink.com/tools/ai-image-generator" },
-            { name: "ChatGPT Alt", url: "https://talkai.info/" },
             { name: "YT to mp3", url: "https://cobalt.tools" },
             { name: "Dinguschan's URL Converter", url: "https://url-converter-opal.vercel.app/" },
             { name: "Notepad in JS", url: "https://notepad.js.org/index.html" },
@@ -706,4 +715,8 @@ document.getElementById("launchApps").onclick = function() {
 
 document.getElementById("chat").onclick = function() {
   document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://chattyice234.github.io/online-chatroom" style="width: 100%; height: 100vh;"></object>';
+};
+
+document.getElementById("button-sg").onclick = function() {
+  document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://docs.google.com/forms/d/e/1FAIpQLSfxAKspb2_AFVdltjOXkeOaxdwdco2S0BRvRqV5grah331pmg/viewform?embedded=true" style="width: 100%; height: 100vh;"></object>';
 };
